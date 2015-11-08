@@ -1,0 +1,45 @@
+body.fixed-menu-horizontal{
+  margin-top: 3.5rem;
+  nav.menu-horizontal{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+nav.menu-horizontal{
+  background: $nav-bg-color;
+  height: 3.5rem;
+  .inner{
+    @extend .container;
+    .branding{
+      @extend .left;
+      color: $color-1;
+      padding: 0.75rem 0.0rem;
+      font-weight: $font-bold;
+      border: 0;
+    }
+    ul{
+      @extend .right;
+      @extend .list-unstyled;
+      @extend .list-inline;
+      li{
+        a{
+          color: $color-3;
+          padding: 0.75rem 0.75rem;
+          display: block;
+          border: 0;
+          &:active,
+          &.active,
+          &:hover {
+            color: $color-1;
+          }
+        }
+      }
+      li:last-child a {
+        padding: 0.75rem 0.0rem 0.75rem 0.75rem;
+      }
+    }
+  }
+}

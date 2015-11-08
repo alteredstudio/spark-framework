@@ -1,0 +1,229 @@
+// ==========================================================================
+// Base – Helpers
+// ==========================================================================
+
+*:focus {
+  outline: 0;
+}
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body.overlay-grid{
+  .overlay-grid{
+    background-image: url('../img/baseline-grid.png');
+    background-repeat: repeat;
+    z-index: 999999;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+}
+
+section.block{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .inner{
+    @extend .container;
+  }
+}
+.box-row{
+  min-height: 2rem;
+  background: $color-6;
+  border-radius: $radius;
+  overflow: hidden;
+  text-align: center;
+  color: $gray-0;
+  margin-bottom: 1rem;
+}
+
+.callout{
+  background: $callout-bg-color;
+}
+
+// General Resets
+.no-margin { margin: 0; }
+.no-padding { padding: 0; }
+.no-float { float: none; }
+.no-background { background: transparent; }
+.no-border { border: 0; }
+
+// Font Weights
+.font-light { font-weight: $font-light; }
+.font-regular { font-weight: $font-regular; }
+.font-bold { font-weight: $font-bold; }
+
+// Font Styles
+.font-normal { font-style: normal; }
+.font-italic { font-style: italic; }
+
+// Text Modifications
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+// Text Alignments
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+// Positions
+.relative { position: relative; }
+.absolute { position: absolute; }
+.static { position: static; }
+.fixed { position: fixed; }
+
+// Display Types
+.none { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+
+// Floats
+.left { float: left; }
+.right { float: right; }
+
+// Alignments
+.center-element {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Hide only visually, but have it available for screenreaders: : h5bp.com/v
+.sr {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Lists
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+.list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+}
+
+// Images
+.img-responsive { max-width: 100%; }
+
+// Image Positions
+.img-left {
+  float: left;
+  margin-right: 20px;
+}
+.img-right {
+  float: right;
+  margin-left: 20px;
+}
+
+// Disable Element
+.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+// Tablet Helpers
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  // General Resets
+  .no-float-tablet { float: none; }
+  .no-padding-tablet { padding: 0; }
+  .no-margin-tablet { margin: 0; }
+
+  // Display Types
+  .none-tablet { display: none; }
+  .block-tablet { display: block; }
+  .inline-block-tablet { display: inline-block; }
+  .inline-tablet { display: inline; }
+
+  // Text Alignments
+  .text-left-tablet { text-align: left; }
+  .text-right-tablet { text-align: right; }
+  .text-center-tablet { text-align: center; }
+  .text-justify-tablet { text-align: justify; }
+
+}
+
+// Desktop Helpers
+@media only screen and (min-width: $breakpoint-desktop) {
+
+  // General Resets
+  .no-float-desktop { float: none; }
+  .no-padding-desktop { padding: 0; }
+  .no-margin-desktop { margin: 0; }
+
+  // Display Types
+  .none-desktop { display: none; }
+  .block-desktop { display: block; }
+  .inline-block-desktop { display: inline-block; }
+  .inline-desktop { display: inline; }
+
+  // Text Alignments
+  .text-left-desktop { text-align: left; }
+  .text-right-desktop { text-align: right; }
+  .text-center-desktop { text-align: center; }
+  .text-justify-desktop { text-align: justify; }
+}
+
+// HD Helpers
+@media only screen and (min-width: $breakpoint-tv) {
+
+  // General Resets
+  .no-float-tv { float: none; }
+  .no-padding-tv { padding: 0; }
+  .no-margin-tv { margin: 0; }
+
+  // Display Types
+  .none-tv { display: none; }
+  .block-tv { display: block; }
+  .inline-block-tv { display: inline-block; }
+  .inline-tv { display: inline; }
+
+  // Text Alignments
+  .text-left-tv { text-align: left; }
+  .text-right-tv { text-align: right; }
+  .text-center-tv { text-align: center; }
+  .text-justify-tv { text-align: justify; }
+}
+
+// Print Helpers
+@media print {
+
+  // General Resets
+  .no-float-print { float: none; }
+  .no-padding-print { padding: 0; }
+  .no-margin-print { margin: 0; }
+
+  // Display Types
+  .none-print { display: none; }
+  .block-print { display: block; }
+  .inline-block-print { display: inline-block; }
+  .inline-print { display: inline; }
+
+  // Text Alignments
+  .text-left-print { text-align: left; }
+  .text-right-print { text-align: right; }
+  .text-center-print { text-align: center; }
+  .text-justify-print { text-align: justify; }
+}

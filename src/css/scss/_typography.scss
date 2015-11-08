@@ -1,0 +1,193 @@
+
+// Body
+html,body{
+  background: $body-background-color;
+  font-family: $regular-font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $body-font-weight;
+  letter-spacing: $body-letter-spacing;
+  color: $body-font-color;
+  font-weight: normal;
+}
+
+// Headings
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  color: $heading-font-color;
+  margin: 0;
+  margin-top: -0.65rem;
+}
+h1,.h1{
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+  margin-top: -0.95rem;
+}
+h2,.h2{
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+h3,.h3{
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+h4,.h4{
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+h5,.h5{
+  font-size: 1.1rem;
+  line-height: 2.0rem;
+}
+h6,.h6{
+  font-size: 1.0rem;
+  line-height: 2.0rem;
+}
+
+// Paragraph
+p { margin: 0 0 0.8rem 0; }
+
+// Links
+a,.link {
+  color: $link-color;
+  background: transparent;
+  //text-decoration: underline;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid $color-2;
+  &.unstyled{
+    text-decoration: none;
+    border: none;
+    &:active,
+    &:hover {
+      text-decoration: none;
+      border: none;
+    }
+  }
+  &:active,
+  &:hover {
+    color: $link-hover-color;
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+// Strong
+strong,
+.strong {
+  font-weight: $font-bold;
+}
+
+// Italic
+em,
+.em {
+  font-style: italic;
+}
+
+// Small
+small, .small { font-size: 80%; }
+
+// Sub and Sup
+sub,
+.sub,
+sup,
+.sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup, .sup { top: -0.5em; }
+sub, .sub { bottom: -0.25em; }
+
+// Del
+del, .del { text-decoration: line-through; }
+
+// Horizontal Rules
+hr,
+.hr {
+  box-sizing: content-box;
+  height: 1px;
+  background: $gray-2;
+  border: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+// Lists
+ul, ol {
+  margin: 1em 0 2em 0;
+  padding: 0 0 0 16px;
+  li {
+    margin-bottom: 5px;
+  }
+}
+dl {
+  &:before, &:after { content: " "; display: table; } &:after { clear: both; }
+  dt {
+    float: left;
+    width: 25%;
+    display: block;
+  }
+  dd {
+    overflow: hidden;
+    display: block;
+  }
+}
+
+// Code
+code, kbd, pre, samp {
+  word-wrap: break-word;
+  font-family: $code-font-family;
+  background-color: $gray-1;
+  font-weight: normal;
+  padding: 8px 12px;
+  white-space: pre-wrap;
+}
+pre {
+  padding: 8px 18px;
+  overflow: auto;
+  border: 1px solid $gray-2;
+}
+
+// Blockquotes
+blockquote,
+.blockquote {
+  font-style: italic;
+  margin: 3em 0;
+  padding-left: 30px;
+  border-left: 2px solid $gray-2;
+  p {
+    margin-bottom: .4em;
+  }
+  cite {
+    font-style: normal;
+    color: $gray-3;
+  }
+}
+
+// Tables
+caption {
+  line-height: normal;
+  font-weight: $font-bold;
+  text-align: left;
+  padding: .5em 0;
+  border-bottom: 1px solid $gray-2;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1em 0;
+  text-align: left;
+  thead,
+  tbody,
+  tfoot {
+    td,
+    th {
+      padding: .8em .6em;
+      border-bottom: 1px solid $gray-2;
+    }
+  }
+}

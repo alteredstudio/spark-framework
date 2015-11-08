@@ -1,0 +1,95 @@
+
+// Color Scheme
+$gray-0:                               #ffffff;
+
+$gray-1:                               #fafafa;
+$gray-2:                               #ececec;
+$gray-3:                               #dddddd;
+
+$gray-4:                               #ababab;
+$gray-5:                               #909090;
+$gray-6:                               #787878;
+
+$gray-7:                               #565656;
+$gray-8:                               #454545;
+$gray-9:                               #373737;
+
+$gray-10:                              #232323;
+
+$color-1:                              #f8fbff;
+$color-2:                              #e0efff;
+$color-3:                              #c7e2ff;
+
+$color-4:                              #77b7f9;
+$color-5:                              #5c9cde;
+$color-6:                              #4484c6;
+
+$color-7:                              #2262a4;
+$color-8:                              #115193;
+$color-9:                              #034385;
+
+// Web Fonts
+// @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700); // https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Vollkorn
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700); // https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Lato
+
+// Font Families
+$regular-font-family:                  helvetica, arial, sans-serif;;
+$custom-font-family:                   Lato, helvetica, arial, sans-serif;;
+$code-font-family:                     'courier new', monospace, serif;
+
+// Font Weights
+$font-light:                           300;
+$font-regular:                         400;
+$font-bold:                            700;
+
+// Body Typography
+$body-background-color:                $gray-0;
+$body-font-family:                     $regular-font-family;
+$body-font-size:                       17px;
+$body-line-height:                     34px;
+$body-letter-spacing:                  0.015rem;
+$body-font-weight:                     $font-regular;
+$body-font-color:                      $gray-9;
+
+// Layout
+$block-padding:                        90px;
+$callout-bg-color:                     $gray-2;
+$nav-bg-color:                         $color-6;
+$radius:                               0.3rem;
+$border:                               0.1rem;
+$transition-speed:                     0.3s;
+
+// Buttons
+$button-font-size:                      18px;
+$button-font-weight:                    $font-regular;
+$button-font-padding:                   0.84rem 1.1rem;
+$button-bg-color:                       $color-6;
+$button-bg-color-hover:                 $color-7;
+$button-font-color:                     $color-1;
+
+// Headings
+$heading-font-family:                  $custom-font-family;
+$heading-font-weight:                  $font-regular;
+$heading-font-color:                   $gray-10;
+
+// Links
+$link-color:                           $color-6;
+$link-hover-color:                     $color-7;
+
+// Grid Containers
+$container-mobile: 30em;
+$container-tablet: 50em;
+$container-desktop: 72em;
+$container-tv: 100em;
+$column-gutter: 2.0rem;
+
+// Responsive Breakpoints
+$breakpoint-mobile:                    ($container-mobile + 40);
+$breakpoint-tablet:                    ($container-tablet + 40);
+$breakpoint-desktop:                   ($container-desktop + 40);
+$breakpoint-tv:                        ($container-tv + 40);
+
+// Easing
+$easeIn:                               cubic-bezier(0.950, 0.050, 0.795, 0.035);
+$easeOut:                              cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$easeInOut:                            cubic-bezier(1.000, 0.000, 0.000, 1.000);

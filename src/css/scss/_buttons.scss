@@ -1,0 +1,84 @@
+.btn{
+  display: inline-block;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: 1.0rem;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  border-radius: $radius;
+  padding: $button-font-padding;
+  transition: all $transition-speed ease;
+  background: $button-bg-color;
+  color: $button-font-color;
+  border: $border solid $button-bg-color;
+  height: 2.8rem;
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $button-bg-color-hover;
+    color: $button-font-color;
+    border: $border solid $button-bg-color-hover;
+  }
+  &.hollow{
+    background: transparent;
+    color: $button-bg-color;
+    border: $border solid $button-bg-color;
+
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus {
+      background: $color-2;
+      color: $button-bg-color-hover;
+      border: $border solid $button-bg-color-hover;
+    }
+  }
+
+  &:disabled,
+  &.disabled{
+    opacity: .65;
+    &:hover{
+      cursor: not-allowed;
+    }
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+// Make a button look and behave like a link
+.btn-link {
+  background-color: transparent;
+  font-size: $body-font-size;
+  font-weight: normal;
+  color: $button-bg-color;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus {
+    cursor: pointer;
+    color: $button-bg-color-hover;
+    background-color: transparent;
+    border: 0;
+  }
+}

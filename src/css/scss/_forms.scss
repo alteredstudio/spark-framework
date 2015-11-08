@@ -1,0 +1,77 @@
+// Forms, Inputs, Labels
+form, fieldset {
+  padding: 0px;
+  border: 0;
+}
+input, textarea, select {
+  border-radius: $radius;
+}
+// Fix Safari Rounds inputs :(
+input[type=search] {
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
+}
+// Fix Safari Field height bug
+input[type=search],input[type=text],input[type=date],input[type=password], select{
+  height: 2.8rem;
+}
+input, textarea, select{
+  background: $gray-0;
+  font-size: 1rem;
+	padding: 10px 14px;
+	width: 100%;
+  border: 0;
+	border: $border solid $gray-3;
+	&:focus{
+		border: $border solid $gray-10;
+	}
+}
+select {
+  text-indent: 5px;
+  display: block;
+}
+label {
+	display:block;
+  font-weight: bold;
+  padding: 0px 0px 5px 0px;
+  margin: -10px 0px 0px 0px;
+	&.error{
+		color: red;
+    padding: 0px 0px 10px 0px;
+    margin: -10px 0px 0px 0px;
+	}
+}
+::-webkit-input-placeholder {
+   color: $gray-3;
+}
+
+// Grouped Fields
+fieldset,.field-group {
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  overflow: hidden;
+  label {
+    padding: 0px 0px 5px 0px;
+    margin: -10px 0px 0px 0px;
+  }
+}
+
+// Checkbox and Radio
+.checkbox,
+.radio {
+  display: inline-block;
+  position: relative;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  label {
+    padding-left: 25px;
+    padding-top: 0;
+    display: inline-block;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    top: 9px;
+    left: 2px;
+  }
+}
