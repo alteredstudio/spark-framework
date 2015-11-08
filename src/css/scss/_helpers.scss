@@ -27,6 +27,23 @@ section.block{
     @extend .container;
   }
 }
+
+/* Verically center and set background to cover, set height to viewport in js. */
+.cover{
+  background: url('../img/spark.jpg') no-repeat center center;
+  background-size: cover;
+  overflow: auto;
+
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+
 .box-row{
   min-height: 2rem;
   background: $color-6;
@@ -49,6 +66,10 @@ section.block{
 }
 
 .invert{
+  color: $gray-0;
+  h1,h2,h3,h4,h5,h6,p{
+    color: $gray-0;
+  }
   input{
     background: transparent;
     color: $gray-0;
