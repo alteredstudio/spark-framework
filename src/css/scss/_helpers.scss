@@ -40,6 +40,29 @@ section.block{
 .callout{
   background: $callout-bg-color;
 }
+.huge{
+  font-size: 4.8rem;
+}
+.lead{
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.invert{
+  input{
+    background: transparent;
+    color: $gray-0;
+    border: $border solid $gray-0;
+  }
+  .btn{
+    background: $gray-0;
+    border: $border solid $gray-0;
+    &.hollow{
+      color: $gray-0;
+      border: $border solid $gray-0;
+    }
+  }
+}
 
 // General Resets
 .no-margin { margin: 0; }

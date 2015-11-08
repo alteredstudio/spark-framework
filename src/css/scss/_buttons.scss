@@ -11,7 +11,7 @@
   user-select: none;
   border-radius: $radius;
   padding: $button-font-padding;
-  transition: all $transition-speed ease;
+  transition: all $transition-speed $easeOut;
   background: $button-bg-color;
   color: $button-font-color;
   border: $border solid $button-bg-color;
@@ -29,7 +29,6 @@
     background: transparent;
     color: $button-bg-color;
     border: $border solid $button-bg-color;
-
     &:hover,
     &:active,
     &.active,
@@ -40,7 +39,6 @@
       border: $border solid $button-bg-color-hover;
     }
   }
-
   &:disabled,
   &.disabled{
     opacity: .65;
@@ -71,7 +69,6 @@ input[type="button"] {
   font-weight: normal;
   color: $button-bg-color;
   border: 0;
-
   &:hover,
   &:active,
   &.active,
