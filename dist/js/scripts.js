@@ -1,0 +1,1 @@
+$(document).ready(function(){function i(){viewportWidth=$(window).width(),viewportHeight=$(window).height(),$(".overlay-grid").css({width:viewportWidth+"px"})}var o=document.body.scrollHeight+60;$(".overlay-grid").css({height:o+"px"}),i(),window.onresize=function(o){i()}});
