@@ -115,9 +115,9 @@ gulp.task('watch', ['browserSync'], function () {
 });
 
 // Gulp Default Task
-gulp.task('default', ['watch']);
+gulp.task('watch', ['watch']);
 
 // Gulp Build Task
-gulp.task('build', function() {
+gulp.task('default', function() {
   runSequence('sass','movecss', 'imagemin', 'jsmin', 'inlinesource');
 });

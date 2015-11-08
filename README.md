@@ -1,2 +1,2 @@
 # spark-framework
-A css framework that aims to be: light, easy to customize, and attractive.
+A Responsive HTML/CSS Framework built to be: light, easy to customize, and attractive.
