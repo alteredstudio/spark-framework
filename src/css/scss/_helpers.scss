@@ -78,7 +78,9 @@ section.block{
   .btn{
     background: $gray-0;
     border: $border solid $gray-0;
+    color: $color-5;
     &.hollow{
+      background: transparent;
       color: $gray-0;
       border: $border solid $gray-0;
     }
