@@ -44,10 +44,10 @@ $font-bold:                            700;
 // Body Typography
 $body-background-color:                $gray-0;
 $body-font-family:                     $regular-font-family;
-$body-font-size:                       17px;
-$body-line-height:                     34px;
+$body-font-size:                       18px;
+$body-line-height:                     32px;
 $body-letter-spacing:                  0.015rem;
-$body-font-weight:                     $font-bold;
+$body-font-weight:                     $font-regular;
 $body-font-color:                      $gray-9;
 
 // Layout
@@ -68,7 +68,7 @@ $button-font-color:                     $color-1;
 
 // Headings
 $heading-font-family:                  $custom-font-family;
-$heading-font-weight:                  $font-regular;
+$heading-font-weight:                  $font-bold;
 $heading-font-color:                   $gray-10;
 
 // Links
