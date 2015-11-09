@@ -20,9 +20,14 @@ $(document).ready(function() {
   function resizeDiv() {
     viewportWidth = $(window).width();
     viewportHeight = $(window).height();
-    //vphOffset = vph - 60;
+    viewportHeightOffset = viewportHeight - 60;
     $('.overlay-grid').css({'width': viewportWidth + 'px'});
-    $('.cover').css({'width': viewportWidth + 'px','height': viewportHeight + 'px'});
+    if( $('.menu-horizontal').length > 0 ){
+      $('.cover').css({'width': viewportWidth + 'px','height': viewportHeightOffset + 'px'});
+    } else{
+      $('.cover').css({'width': viewportWidth + 'px','height': viewportHeight + 'px'});
+    }
+
   }
 
 
