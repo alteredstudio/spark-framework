@@ -20,7 +20,7 @@ section.block{
 /* Verically center and set background to cover, set height to viewport in js. */
 .cover{
   @extend .invert;
-  background: url('../img/spark.jpg') no-repeat center top;
+  background: url('assets/img/spark.jpg') no-repeat center top;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ section.block{
   overflow: hidden;
   text-align: center;
   color: $gray-0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .callout{

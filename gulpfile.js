@@ -9,12 +9,10 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     less = require('gulp-less'),
-
     concat = require('gulp-concat'),
     csslint = require('gulp-csslint'),
     minifyCSS = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer'),
-
     path = require('path'),
     notify = require('gulp-notify'),
     inlinesource = require('gulp-inline-source'),
@@ -26,7 +24,7 @@ var gulp = require('gulp'),
 
 // Task to compile SCSS
 gulp.task('sass', function () {
-  return gulp.src('./src/css/scss/include.scss')
+  return gulp.src('./src/assets/css/scss/include.scss')
     .pipe(sass({
       errLogToConsole: false,
       paths: [ path.join(__dirname, 'scss', 'includes') ]
@@ -38,8 +36,8 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     .pipe(minifyCSS())
     .pipe(concat('styles.css'))
-    .pipe(gulp.dest('./src/css/'))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./src/assets/css/'))
+    .pipe(gulp.dest('./dist/assets/css/'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -48,7 +46,7 @@ gulp.task('sass', function () {
 
 // Task to compile LESS
 gulp.task('less', function () {
-  return gulp.src('./src/css/less/style.less')
+  return gulp.src('./src/assets/css/less/include.less')
     .pipe(less({ paths: [ path.join(__dirname, 'less', 'includes') ]
   })
   .on('error', function(err) {
@@ -57,8 +55,12 @@ gulp.task('less', function () {
   .on("error", notify.onError(function(error) {
     return "Failed to Compile LESS: " + error.message;
   }))
-  .pipe(gulp.dest('./src/'))
-  .pipe(gulp.dest('./dist/'))
+  .pipe(csslint())
+  .pipe(autoprefixer())
+  .pipe(minifyCSS())
+  .pipe(concat('styles.css'))
+  .pipe(gulp.dest('./src/assets/css/'))
+  .pipe(gulp.dest('./dist/assets/css/'))
   .pipe(browserSync.reload({
     stream: true
   }))
@@ -67,25 +69,25 @@ gulp.task('less', function () {
 
 // Task to move compiled CSS to `dist` folder
 gulp.task('movecss', function () {
-  return gulp.src('./src/')
-    .pipe(gulp.dest('./dist/'));
+  return gulp.src('./src/assets/css/')
+    .pipe(gulp.dest('./dist/assets/css/'));
 });
 
 // Task to Minify JS
 gulp.task('jsmin', function() {
-  return gulp.src('./src/js/**/*.js')
+  return gulp.src('./src/assets/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest('./dist/assets/js/'));
 });
 
 // Minify Images
 gulp.task('imagemin', function (){
-  return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('./src/assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
   // Caching images that ran through imagemin
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('./dist/img'));
+  .pipe(gulp.dest('./dist/assets/img/a'));
 });
 
 // BrowserSync Task (Live reload)
@@ -109,8 +111,8 @@ gulp.task('inlinesource', function () {
 
 // Gulp Watch Task
 gulp.task('watch', ['browserSync'], function () {
-   gulp.watch('./src/css/scss/**/*', ['sass']),
-   gulp.watch('./src/css/less/**/*', ['less']);
+   gulp.watch('./src/assets/css/scss/**/*', ['sass']),
+   gulp.watch('./src/assets/css/less/**/*', ['less']);
    gulp.watch('./src/**/*.html').on('change', browserSync.reload);
 });
 
