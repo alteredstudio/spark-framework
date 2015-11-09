@@ -22,6 +22,7 @@ $(document).ready(function() {
     viewportHeight = $(window).height();
     //vphOffset = vph - 60;
     $('.overlay-grid').css({'width': viewportWidth + 'px'});
+    $('.cover').css({'width': viewportWidth + 'px','height': viewportHeight + 'px'});
   }
 
 

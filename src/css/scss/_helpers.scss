@@ -30,11 +30,16 @@ section.block{
 
 /* Verically center and set background to cover, set height to viewport in js. */
 .cover{
+  @extend .invert;
   background: url('../img/spark.jpg') no-repeat center top;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  .inner{
+    text-align: center;
+    flex: none;
+  }
 }
 
 .aligner {
@@ -44,7 +49,7 @@ section.block{
 }
 
 .aligner-item {
-  //max-width: 50%;
+  max-width: 50%;
 }
 .aligner-item-top {
   align-self: flex-start;
@@ -54,7 +59,7 @@ section.block{
 }
 .aligner-item-fixed {
   flex: none;
-  //max-width: 50%;
+  max-width: 50%;
 }
 
 .box-row{
@@ -71,8 +76,9 @@ section.block{
   background: $callout-bg-color;
 }
 .huge{
-  font-size: 4.5rem;
+  font-size: 3.8rem;
   line-height: 3rem;
+  margin-top: 0.0rem;
 }
 .lead{
   font-size: 24px;
