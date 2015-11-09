@@ -22,7 +22,7 @@ input, textarea, select{
   margin: 0px 0px 10px 0px;
 	width: 100%;
   border: 0;
-	border: $border solid $gray-3;
+	border: $border solid $gray-4;
 	&:focus{
 		border: $border solid $gray-10;
 	}
@@ -35,7 +35,6 @@ label {
 	display:block;
   font-weight: bold;
   padding: 0px 0px 5px 0px;
-  margin: -9px 0px 0px 0px;
 	&.error{
 		color: red;
     padding: 0px 0px 10px 0px;
@@ -43,17 +42,24 @@ label {
 	}
 }
 ::-webkit-input-placeholder {
-   color: $gray-3;
+   color: $gray-4;
 }
 
 // Grouped Fields
-fieldset,.field-group {
-  padding-top: 1.0rem;
-  padding-bottom: 1.0rem;
-  overflow: hidden;
-  label {
-    padding: 0px 0px 5px 0px;
-    margin: -9px 0px 0px 0px;
+.field-group {
+  input{
+    border-radius: 0;
+    margin: 0;
+    &:not(:last-of-type):not(:focus) {
+      border-bottom-color: transparent;
+    }
+    &:first-of-type {
+      border-radius: $radius $radius 0 0;
+    }
+    &:last-of-type {
+      border-radius: 0 0 $radius $radius;
+      margin: 0 0 10px;
+    }
   }
 }
 

@@ -1,19 +1,15 @@
 body.fixed-menu-horizontal{
-  margin-top: 3.5rem;
+  margin-top: 3.8rem;
   nav.menu-horizontal{
     position: fixed;
     top:0;
     width: 100%;
     z-index: 5;
   }
-  .cover{
-    margin-top: 3.5rem;
-  }
 }
 
 nav.menu-horizontal{
   background: $nav-bg-color;
-  height: 3.5rem;
   .inner{
     @extend .container;
     .branding{

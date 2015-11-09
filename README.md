@@ -3,6 +3,10 @@ A Responsive HTML/CSS Framework built to be: light, easy to customize, and attra
 
 CSS file size compressed is 18k.
 
+>“Simplicity is an acquired taste. Mankind, left free, instinctively complicates life.”
+
+ -Katharine Fullerton Gerould
+
 ## Why use Spark?
 
 * Fully Responsive with breakpoint files for: Watch, Mobile, Tablet, Desktop, and TVs.
@@ -11,11 +15,6 @@ CSS file size compressed is 18k.
 * Uses Gulp.js for an efficient workflow.
 * Uses SCSS for css preprocessing.
 * SEO best practices baked in.
-
-
->“Simplicity is an acquired taste. Mankind, left free, instinctively complicates life.”
- -Katharine Fullerton Gerould
-
 
 ### Setup
 
@@ -29,11 +28,11 @@ That's it, go change the world. :rocket:
 
 Spark has two folders a 'src' and 'dist'. The src folder is the one you want to edit in. After you run Gulp the compressed css img and js files will be pushed to dist ready for production.
 
-### Contains
+### Contents
 
 * Reset
-* Typography
 * Grid
+* Typography
 * Forms
 * Buttons
 * Menus
@@ -44,10 +43,10 @@ Spark has two folders a 'src' and 'dist'. The src folder is the one you want to 
 
 ### Credits & Inspiration
 
-* Bootstrap
-* Base
-* Pure
-* HTML5 Boilerplate
+* [Bootstrap](http://getbootstrap.com/)
+* [Base](http://getbase.org/)
+* [PureCSS](http://purecss.io/)
+* [HTML5 Boilerplate](https://html5boilerplate.com/)
 
 ### License
 

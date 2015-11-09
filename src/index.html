@@ -8,7 +8,7 @@
 
 </head>
 <!-- Body options: .fixed-menu-horizontal .overlay-grid -->
-<body class="fixed-menu-horizontal overlay-grid">
+<body class="">
 
 
   <nav class="menu-horizontal">
@@ -49,8 +49,6 @@
       <br />
       <h2 class="h6">Heading 6</h2>
       <br />
-
-      <a href="#">sample link</a>
 
       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
       <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
@@ -159,6 +157,14 @@
               <del>Deleted text</del>
             </td>
           </tr>
+          <tr>
+            <td>
+              <code>&lt;a&gt;</code>
+            </td>
+            <td>
+              <a href="#">sample link</a>
+            </td>
+          </tr>
         </tbody>
       </table>
 
@@ -245,27 +251,20 @@
             </select>
           </div>
           <div class="col-md-6">
-            <span class="checkbox">
-              <label for="checkbox-example">Remember me</label>
-              <input id="checkbox-example" type="checkbox">
-            </span>
+
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             <br />
             <button type="submit" class="btn">Sign In</button>
-            <button type="reset" class="btn hollow">Cancel</button>
+            <button type="reset" class="btn hollow">Go Back</button>
           </div>
         </div>
         <div class="row">
         </div>
         <div class="row">
         </div>
-
-
-
-
 
       </form>
 
@@ -273,38 +272,51 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block callout">
     <div class="inner">
 
+      <h2>Grouped Inputs</h2>
+      <br />
       <form action="">
 
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-md-6">
+
             <fieldset class="field-group">
-              <label for="">First Name</label>
-              <input type="text">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="Password">
             </fieldset>
+
+            <span class="checkbox">
+              <label for="checkbox-example">Remember me</label>
+              <input id="checkbox-example" type="checkbox">
+            </span>
+
           </div>
-          <div class="col-xs-12 col-sm-6">
+
+          <div class="col-md-6">
+
             <fieldset class="field-group">
-              <label for="">Last Name</label>
-              <input type="text">
+              <input type="text" placeholder="Address">
+              <input type="text" placeholder="Age">
+              <label>Age Group</label>
+              <select>
+                <option>18-29</option>
+                <option>30-39</option>
+                <option>40-49</option>
+                <option>50-59</option>
+                <option>60+</option>
+              </select>
             </fieldset>
+
           </div>
+
         </div>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <fieldset class="field-group">
-              <label for="">Username</label>
-              <input type="text">
-            </fieldset>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <fieldset class="field-group">
-              <label for="">Email</label>
-              <input type="text">
-            </fieldset>
+          <div class="col-md-12">
+            <button type="submit" class="btn">Sign In</button>
           </div>
         </div>
 
@@ -321,26 +333,56 @@
       <h1>Grid Examples</h1>
       <br />
 
-      <div class="row"><div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div><div class="col-xs-6 col-sm-6 col-md-8 col-lg-10"><div class="box-row"></div></div><div class="col-xs-6 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div><div class="col-xs-12 col-sm-9 col-md-10 col-lg-11"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-10 col-sm-6 col-md-8 col-lg-10"><div class="box-row"></div></div><div class="col-xs-2 col-sm-6 col-md-4 col-lg-2"><div class="box-row"></div></div></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div>
+        <div class="col-xs-6 col-sm-6 col-md-8 col-lg-10"><div class="box-row"></div></div>
+        <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1"><div class="box-row"></div></div>
+        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-11"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-sm-6 col-md-8 col-lg-10"><div class="box-row"></div></div>
+        <div class="col-xs-2 col-sm-6 col-md-4 col-lg-2"><div class="box-row"></div></div>
+      </div>
 
       <br /><br />
 
-      <div class="row"><div class="col-xs-12"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-1"><div class="box-row"></div></div><div class="col-xs-11"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-2"><div class="box-row"></div></div><div class="col-xs-10"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-3"><div class="box-row"></div></div><div class="col-xs-9"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-4"><div class="box-row"></div></div><div class="col-xs-8"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-5"><div class="box-row"></div></div><div class="col-xs-7"><div class="box-row"></div></div></div>
-      <div class="row"><div class="col-xs-6"><div class="box-row"></div></div><div class="col-xs-6"><div class="box-row"></div></div></div>
-
+      <div class="row">
+        <div class="col-xs-12"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-1"><div class="box-row"></div></div>
+        <div class="col-xs-11"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2"><div class="box-row"></div></div>
+        <div class="col-xs-10"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"><div class="box-row"></div></div>
+        <div class="col-xs-9"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4"><div class="box-row"></div></div>
+        <div class="col-xs-8"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5"><div class="box-row"></div></div>
+        <div class="col-xs-7"><div class="box-row"></div></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6"><div class="box-row"></div></div>
+        <div class="col-xs-6"><div class="box-row"></div></div>
+      </div>
 
     </div>
   </section>
-<!--
-  <script src="js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="js/scripts.js"></script> -->
+
+<footer class="footer">
+  <div class="text-center">Designed and built with all the &#9829; in the world</div>
+</footer>
 
   <script src="assets/js/vendor/jquery-1.11.3.min.js" inline></script>
   <script src="assets/js/scripts.js" inline></script>
