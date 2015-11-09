@@ -12,8 +12,9 @@ CSS file size compressed is 18k.
 * Uses SCSS for css preprocessing.
 * SEO best practices baked in.
 
+
 >“Simplicity is an acquired taste. Mankind, left free, instinctively complicates life.”
-- Katharine Fullerton Gerould
+ -Katharine Fullerton Gerould
 
 
 ### Setup
