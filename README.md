@@ -1,5 +1,6 @@
 # Spark HTML/CSS Framework :sparkles:
 A Responsive HTML/CSS Framework built to be: light, easy to customize, and attractive.
+
 CSS file size compressed is 18k.
 
 ## Why use Spark?
@@ -10,6 +11,10 @@ CSS file size compressed is 18k.
 * Uses Gulp.js for a great workflow.
 * Uses SCSS for css preprocessing.
 * SEO best practices baked in.
+
+>“Simplicity is an acquired taste. Mankind, left free, instinctively complicates life.”
+- Katharine Fullerton Gerould
+
 
 ### Setup
 
