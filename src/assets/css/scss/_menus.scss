@@ -44,13 +44,60 @@ nav.menu-horizontal{
 }
 
 
+body.overlayMenu-open{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  .overlay-menu{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.overlay-menu{
+  background: $color-6;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  overflow-y: auto;
+  // Hide
+  visibility: hidden;
+  opacity: 0.0;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul{
+    li{
+      a{
+        color: $gray-0;
+        padding: 1.0rem 0;
+        display: block;
+        font-size: 28px;
+        border: 0;
+        &:active,
+        &.active,
+        &:hover {
+          color: $color-1;
+        }
+      }
+    }
+  }
+
+}
+
+
 // Mobile Menu
 .menu-trigger{
   position: absolute;
   padding: 24px 28px;
   top: .3rem;
   right: 0.7rem;
-  z-index: 99;
+  z-index: 100;
   cursor: pointer;
   span{
     background: $gray-6;
@@ -89,7 +136,7 @@ nav.menu-horizontal{
   }
 }
 
-body.menuOverlay-open{
+body.overlayMenu-open{
   .menu-trigger span{
     &.one{
         transform: rotate(45deg);

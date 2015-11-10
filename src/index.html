@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Spark HTML/CSS Framework</title>
   <meta name="description" content="A Responsive HTML/CSS Framework built to be: light, easy to customize, and attractive.">
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimal-ui">
 
   <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="assets/img/icons/favicon.png">
@@ -41,14 +41,12 @@
 
   <header class="cover">
     <div class="inner align-center col-sm-10 col-md-10 col-lg-8 col-xlg-6">
-      <h1 class="huge">Cover Section</h1>
+      <h1 class="huge">Cover<span class="breakpoint"></span></h1>
       <br />
-      <h2 class="breakpoint">Breakpoint is</h2>
+      <p class="lead">Something interesting about the page above its contents, it's best to keep this short and sweet.</p>
       <br />
-      <p class="lead">Something leading about the collection below its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it.</p>
-      <br />
-      <a href="#" class="btn">Primary Action</a>
-      <a href="#" class="btn hollow margin-left-2">Secondary Action</a>
+      <a href="#" class="btn margin-bottom-2">Primary Action</a>
+      <a href="#" class="btn hollow margin-left-2 margin-bottom-2">Secondary Action</a>
     </div>
   </header>
 
@@ -224,10 +222,17 @@
       <button class="btn">Button</button>
       <button class="btn hollow">Hollow Button</button>
       <submit class="btn">Submit Button</submit>
-      <button class="btn-link">Link Styled Button</button>
       <button class="btn" disabled>Disabled Button</button>
-      <br /><br />
-      <submit class="btn btn-block">Block Submit</submit>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-md-9">
+          <submit class="btn btn-block">Block Submit</submit>
+        </div>
+        <div class="col-md-3">
+          <button class="btn-link">Link Style Button</button>
+        </div>
+      </div>
       <br />
       <br />
       <h2>Forms</h2>
@@ -243,6 +248,10 @@
           </div>
         </div>
       </form>
+      <br />
+
+      <a class="btn overlay-trigger" data-overlay="overlay-message">Message Overlay</a>
+      <br />
       <br />
 
       <form>
@@ -407,22 +416,44 @@
     <div class="text-center">Designed and built with all the &#9829; in the world</div>
   </footer>
 
-  <div class="overlay overlay-menu">
 
-  	<table id="mobile-menu" style="width: 100%;">
-  	   <tr>
-  	     <td style="text-align: center; vertical-align: middle;">
-  			 	 <nav>
-             <ul class="">
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Pricing</a></li>
-               <li><a href="#">Contact</a></li>
-             </ul>
-  			   </nav>
-  	     </td>
-  	   </tr>
-  	</table>
+  <div class="overlay-menu invert">
+    <div class="inner">
+
+      <div class="row">
+        <div class="align-center col-sm-10 col-md-10 col-lg-8 col-xlg-6 pad-both-4">
+
+          <ul class="list-unstyled text-align: center;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="overlay overlay-message invert">
+    <div class="inner">
+
+      <div class="row">
+        <div class="align-center col-sm-10 col-md-10 col-lg-8 col-xlg-6 pad-both-4">
+          <h2>Oh, Hello i didn't see you there.</h2>
+          <br />
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="overlay-close">
+      <span class="one"></span>
+      <span class="two"></span>
+    </div>
 
   </div>
 

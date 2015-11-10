@@ -29,6 +29,7 @@ section.block{
   .inner{
     text-align: center;
     flex: none;
+    margin-top: -30px;
   }
 }
 
@@ -66,7 +67,7 @@ section.block{
   h1,h2,h3,h4,h5,h6,p{
     color: $gray-0;
   }
-  .menu-trigger span{
+  .menu-trigger span, .overlay-close span{
     background: $gray-0;
   }
   input{

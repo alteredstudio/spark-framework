@@ -17,32 +17,38 @@ document.addEventListener('DOMContentLoaded', function() {
   // On scroll check if menu should be fixed
   $(window).scroll(function() {
     fixedNav();
+    localStorage.cachedScrollPos = $(window).scrollTop();
   });
 
   function resizeWindow() {
-    //document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     viewportWidth = $(window).width();
     viewportHeight = $(window).height();
+    document.body.style.overflow = "";
 
-    $('.overlay, .cover').css({
+    $('.overlay, .overlay-menu, .cover').css({
       'width': viewportWidth,
       'height': viewportHeight
     });
+    $('.overlay .inner, .overlay-menu .inner').css({
+      'max-height': viewportHeight
+    });
 
     pageHeight = $(document).height();
-    //document.body.style.overflow = "";
-
-    // if( $('.overlay-grid').length > 0 ){
-    //   // Menu present, add menu height to pageHeight
-    //   $('.overlay-grid').css({'width': viewportWidth + 'px','height': pageHeight + 'px'});
-    // }
-
   }
 
   // Menu overlay
   function menuOverlay() {
     $('.menu-trigger').click(function () {
-      $('body').toggleClass('menuOverlay-open');
+
+      if( $('body.overlayMenu-open').length > 0 ) {
+        // Menu Open
+        $('body').removeClass('overlayMenu-open').scrollTop(localStorage.cachedScrollPos);
+      } else {
+        // Menu Closed
+        $('body').addClass('overlayMenu-open').scrollTop(0);
+      }
+
     });
   } // End: menuOverlay
 
@@ -53,15 +59,15 @@ document.addEventListener('DOMContentLoaded', function() {
       var id = '.' + overlay;
       localStorage.cachedScrollPos = $(window).scrollTop();
 
-      $(id).addClass('open');
-      $('body').addClass('overlay-open');
+      $(id).addClass('is-active');
+      $('body').scrollTop(0).addClass('overlay-open');
 
-      $('.overlay-close').on( 'click', function( event ) {
+      $('.overlay-close').click(function () {
         $(this).parent().removeClass('is-active');
-        $(id).removeClass('open');
-        $('body').removeClass('overlay-open');
-        $('body').scrollTop(localStorage.cachedScrollPos);
+        $(id).removeClass('is-active');
+        $('body').removeClass('overlay-open').scrollTop(localStorage.cachedScrollPos);
       });
+
     });
   } // End: overlays
 
@@ -69,13 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
   function accordions() {
     $('.trigger-drawer').click(function () {
       var $target = $(this).attr('data-drawer');
+
       $(".drawer." + $target).toggleClass('is-active');
+
     });
   } // End: accordions
 
   // Fixed Horizontal Menu
   function fixedNav() {
     var scrollTop = $(window).scrollTop();
+
     if( $('.cover').length > 0 ){
       if ( scrollTop > viewportHeight ) {
         $('body').addClass('fixed-menu-horizontal');
@@ -85,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       $('body').addClass('fixed-menu-horizontal');
     }
+
   } // End: stickyNav
+
 
 }, false); // End DOMContentLoaded
