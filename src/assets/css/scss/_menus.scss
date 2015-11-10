@@ -1,21 +1,27 @@
 body.fixed-menu-horizontal{
-  margin-top: 3.8rem;
   nav.menu-horizontal{
+    background: $nav-bg-color;
     position: fixed;
     top:0;
+    left: 0px;
     width: 100%;
     z-index: 5;
   }
 }
 
 nav.menu-horizontal{
-  background: $nav-bg-color;
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
   .inner{
     @extend .container;
     .branding{
       @extend .left;
       color: $color-1;
-      padding: 0.75rem 0.0rem;
+      padding: 1.2rem 0.0rem;
       font-weight: $font-bold;
       border: 0;
     }
@@ -26,7 +32,7 @@ nav.menu-horizontal{
       li{
         a{
           color: $color-3;
-          padding: 0.75rem 0.75rem;
+          padding: 1.2rem 1.2rem;
           display: block;
           border: 0;
           &:active,
@@ -37,7 +43,7 @@ nav.menu-horizontal{
         }
       }
       li:last-child a {
-        padding: 0.75rem 0.0rem 0.75rem 0.75rem;
+        padding: 1.2rem 0.0rem 1.2rem 1.2rem;
       }
     }
   }
@@ -99,8 +105,8 @@ body.overlayMenu-open{
 .menu-trigger{
   position: absolute;
   padding: 24px 28px;
-  top: .3rem;
-  right: 0.7rem;
+  top: .7rem;
+  right: 0.85rem;
   z-index: 100;
   cursor: pointer;
   span{

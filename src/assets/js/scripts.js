@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // On scroll check if menu should be fixed
   $(window).scroll(function() {
     fixedNav();
-    localStorage.cachedScrollPos = $(window).scrollTop();
   });
 
   function resizeWindow() {
@@ -26,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     viewportHeight = $(window).height();
     document.body.style.overflow = "";
 
-    $('.overlay, .overlay-menu, .cover').css({
+    $('.cover, .overlay, .overlay-menu').css({
       'width': viewportWidth,
       'height': viewportHeight
     });
@@ -46,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('body').removeClass('overlayMenu-open').scrollTop(localStorage.cachedScrollPos);
       } else {
         // Menu Closed
+        localStorage.cachedScrollPos = $(window).scrollTop();
         $('body').addClass('overlayMenu-open').scrollTop(0);
       }
 
@@ -55,12 +55,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Generic overlays
   function overlays() {
     $('.overlay-trigger').click(function () {
+      localStorage.cachedScrollPos = $(window).scrollTop();
       var overlay = $(this).data('overlay');
       var id = '.' + overlay;
-      localStorage.cachedScrollPos = $(window).scrollTop();
 
       $(id).addClass('is-active');
-      $('body').scrollTop(0).addClass('overlay-open');
+      $('body').addClass('overlay-open').scrollTop(0);
 
       $('.overlay-close').click(function () {
         $(this).parent().removeClass('is-active');
