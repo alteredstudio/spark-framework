@@ -12,8 +12,11 @@ input[type=search] {
   -webkit-border-radius: 0px;
 }
 // Fix Safari Field height bug
-input[type=search],input[type=text],input[type=date],input[type=password], select{
+input[type=text],input[type=search],input[type=date],input[type=password], select{
   height: 2.8rem;
+}
+input[type=text],input[type=search],input[type=date],input[type=password],textarea{
+  -webkit-appearance: none;
 }
 input, textarea, select{
   box-shadow: none !important;
