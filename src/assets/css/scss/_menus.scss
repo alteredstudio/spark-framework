@@ -70,11 +70,15 @@ body.overlayMenu-open{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  .inner{
+    // Center with Flexbox
+    text-align: center;
+    flex: none;
+  }
   ul{
     li{
       a{
-        color: $gray-0;
+        color: $color-3;
         padding: 1.0rem 0;
         display: block;
         font-size: 28px;
@@ -82,7 +86,7 @@ body.overlayMenu-open{
         &:active,
         &.active,
         &:hover {
-          color: $color-1;
+          color: $gray-0;
         }
       }
     }
