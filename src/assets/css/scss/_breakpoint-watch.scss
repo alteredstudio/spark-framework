@@ -1,0 +1,8 @@
+.desktop-up{ display: none; }
+.tablet-down{ display: block; }
+
+.breakpoint{
+  &:after{
+    content: " Watch";
+  }
+}

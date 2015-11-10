@@ -16,15 +16,26 @@
 <body class="">
 
 
-  <nav class="menu-horizontal">
+  <nav class="menu-horizontal invert">
     <div class="inner">
+
       <a class="branding" href="#">Spark</a>
-      <ul>
+
+      <ul class="desktop-up">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+
+      <div class="menu-trigger tablet-down" data-overlay="overlay-menu">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+      </div>
+
     </div>
   </nav>
 
@@ -32,10 +43,12 @@
     <div class="inner align-center col-sm-10 col-md-10 col-lg-8 col-xlg-6">
       <h1 class="huge">Cover Section</h1>
       <br />
+      <h2 class="breakpoint">Breakpoint is</h2>
+      <br />
       <p class="lead">Something leading about the collection below its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it.</p>
       <br />
-      <a href="#" class="btn">Main action</a>
-      <a href="#" class="btn hollow">Hollow action</a>
+      <a href="#" class="btn">Primary Action</a>
+      <a href="#" class="btn hollow margin-left-2">Secondary Action</a>
     </div>
   </header>
 
@@ -54,6 +67,8 @@
       <br />
       <h2 class="h6">Heading 6</h2>
       <br />
+      <hr />
+      <br />
 
       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
       <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
@@ -62,13 +77,10 @@
       <ul>
         <li>Far far away</li>
         <li>Far far away</li>
-        <li>Far far away</li>
         <ul>
           <li>Far far away</li>
           <li>Far far away</li>
-          <li>Far far away</li>
           <ul>
-            <li>Far far away</li>
             <li>Far far away</li>
             <li>Far far away</li>
           </ul>
@@ -203,7 +215,10 @@
         </tbody>
       </table>
 
-      <h2>Form Controls</h2>
+      <br />
+      <br />
+      <h2>Buttons</h2>
+      <br />
 
       <a href="#" class="btn">A Button</a>
       <button class="btn">Button</button>
@@ -213,7 +228,10 @@
       <button class="btn" disabled>Disabled Button</button>
       <br /><br />
       <submit class="btn btn-block">Block Submit</submit>
-      <hr />
+      <br />
+      <br />
+      <h2>Forms</h2>
+      <br />
 
       <form>
         <div class="row">
@@ -385,9 +403,28 @@
     </div>
   </section>
 
-<footer class="footer">
-  <div class="text-center">Designed and built with all the &#9829; in the world</div>
-</footer>
+  <footer class="footer">
+    <div class="text-center">Designed and built with all the &#9829; in the world</div>
+  </footer>
+
+  <div class="overlay overlay-menu">
+
+  	<table id="mobile-menu" style="width: 100%;">
+  	   <tr>
+  	     <td style="text-align: center; vertical-align: middle;">
+  			 	 <nav>
+             <ul class="">
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Pricing</a></li>
+               <li><a href="#">Contact</a></li>
+             </ul>
+  			   </nav>
+  	     </td>
+  	   </tr>
+  	</table>
+
+  </div>
 
   <script src="assets/js/vendor/jquery-1.11.3.min.js" inline></script>
   <script src="assets/js/scripts.js" inline></script>

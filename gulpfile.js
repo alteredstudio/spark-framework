@@ -87,7 +87,7 @@ gulp.task('imagemin', function (){
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('./dist/assets/img/a'));
+  .pipe(gulp.dest('./dist/assets/img/'));
 });
 
 // BrowserSync Task (Live reload)

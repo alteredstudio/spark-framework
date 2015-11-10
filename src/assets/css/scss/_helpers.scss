@@ -32,8 +32,6 @@ section.block{
   }
 }
 
-
-
 .box-row{
   min-height: 2rem;
   background: $color-6;
@@ -67,6 +65,9 @@ section.block{
   color: $gray-0;
   h1,h2,h3,h4,h5,h6,p{
     color: $gray-0;
+  }
+  .menu-trigger span{
+    background: $gray-0;
   }
   input{
     background: transparent;
@@ -127,8 +128,6 @@ section.block{
 // Floats
 .left { float: left; }
 .right { float: right; }
-
-
 
 // Lists
 .list-unstyled {
@@ -212,6 +211,8 @@ section.block{
   .text-center-desktop { text-align: center; }
   .text-justify-desktop { text-align: justify; }
 }
+
+
 
 // HD Helpers
 @media only screen and (min-width: $breakpoint-tv) {

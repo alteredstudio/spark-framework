@@ -42,3 +42,75 @@ nav.menu-horizontal{
     }
   }
 }
+
+
+// Mobile Menu
+.menu-trigger{
+  position: absolute;
+  padding: 24px 28px;
+  top: .3rem;
+  right: 0.7rem;
+  z-index: 99;
+  cursor: pointer;
+  span{
+    background: $gray-6;
+    position: absolute;
+    transition: transform .35s ease-out;
+    width:32px;
+    height:2px;
+    display:block;
+    &.one{
+        top:13px;
+        left:10px;
+        opacity:1;
+    }
+    &.two{
+        top:24px;
+        left:10px;
+        opacity:1;
+    }
+    &.three{
+        top:35px;
+        left:10px;
+        opacity:1;
+    }
+    &.four{
+        transform: rotate(0deg);
+        top:23px;
+        left:10px;
+        opacity:0;
+    }
+    &.five{
+        transform: rotate(0deg);
+        top:23px;
+        left:10px;
+        opacity:0;
+    }
+  }
+}
+
+body.menuOverlay-open{
+  .menu-trigger span{
+    &.one{
+        transform: rotate(45deg);
+        opacity:0;
+    }
+    &.two{
+        opacity:0;
+    }
+    &.three{
+        transform: rotate(-45deg);
+        opacity:0;
+    }
+    &.four{
+        opacity:1;
+        margin:0px 0px;
+        transform: rotate(45deg);
+    }
+    &.five{
+        opacity:1;
+        margin:0px 0px;
+        transform: rotate(-45deg);
+    }
+  }
+}

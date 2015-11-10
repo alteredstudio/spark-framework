@@ -9,13 +9,14 @@ input, textarea, select {
 // Fix Safari Rounds inputs :(
 input[type=search] {
   -webkit-appearance: none;
-  -webkit-border-radius:0px;
+  -webkit-border-radius: 0px;
 }
 // Fix Safari Field height bug
 input[type=search],input[type=text],input[type=date],input[type=password], select{
   height: 2.8rem;
 }
 input, textarea, select{
+  box-shadow: none !important;
   background: $gray-0;
   font-size: 1rem;
 	padding: 10px 14px;
@@ -71,7 +72,7 @@ label {
   margin-top: .5em;
   margin-bottom: .5em;
   label {
-    padding-left: 25px;
+    margin-left: 25px;
     padding-top: 0;
     display: inline-block;
   }

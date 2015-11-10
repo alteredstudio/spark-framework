@@ -1,0 +1,8 @@
+.desktop-up{ display: block; }
+.tablet-down{ display: none; }
+
+.breakpoint{
+  &:after{
+    content: " Desktop";
+  }
+}
