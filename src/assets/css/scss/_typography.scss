@@ -1,5 +1,5 @@
 // Body
-html,body{
+html, body{
   background: $body-background-color;
   font-family: $regular-font-family;
   font-size: $body-font-size;
@@ -11,35 +11,35 @@ html,body{
 }
 
 // Headings
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
   color: $heading-font-color;
   margin: 0;
   margin-top: -0.65rem;
 }
-h1,.h1{
+h1, .h1{
   font-size: 2.5rem;
   line-height: 3.7rem;
   margin-top: -0.95rem;
 }
-h2,.h2{
+h2, .h2{
   font-size: 1.8rem;
   line-height: 2.6rem;
 }
-h3,.h3{
+h3, .h3{
   font-size: 1.4rem;
   line-height: 2.3rem;
 }
-h4,.h4{
+h4, .h4{
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-h5,.h5{
+h5, .h5{
   font-size: 1.1rem;
   line-height: 2.0rem;
 }
-h6,.h6{
+h6, .h6{
   font-size: 1.0rem;
   line-height: 2.0rem;
 }
@@ -48,7 +48,7 @@ h6,.h6{
 p { margin: 0 0 0.8rem 0; }
 
 // Links
-a,.link {
+a, .link {
   color: $link-color;
   background: transparent;
   //text-decoration: underline;
@@ -73,14 +73,12 @@ a,.link {
 }
 
 // Strong
-strong,
-.strong {
+strong, .strong {
   font-weight: $font-bold;
 }
 
 // Italic
-em,
-.em {
+em, .em {
   font-style: italic;
 }
 
@@ -88,10 +86,7 @@ em,
 small, .small { font-size: 80%; }
 
 // Sub and Sup
-sub,
-.sub,
-sup,
-.sup {
+sub, .sub, sup, .sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -104,8 +99,7 @@ sub, .sub { bottom: -0.25em; }
 del, .del { text-decoration: line-through; }
 
 // Horizontal Rules
-hr,
-.hr {
+hr, .hr {
   box-sizing: content-box;
   height: 1px;
   background: $gray-2;
@@ -151,8 +145,7 @@ pre {
 }
 
 // Blockquotes
-blockquote,
-.blockquote {
+blockquote, .blockquote {
   font-style: italic;
   margin: 3em 0;
   padding-left: 30px;

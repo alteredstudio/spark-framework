@@ -110,11 +110,11 @@ label {
 /* Checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
-  transition: all $transition-speed $easeOut;
+  transition: all $transition-speed ease-out;
 }
 [type="checkbox"]:checked + label:after {
   opacity: 1;
-  transition: all $transition-speed $easeOut;
+  transition: all $transition-speed ease-out;
 }
 [type="checkbox"]:disabled:checked + label:after {
   color: #999;
@@ -168,11 +168,11 @@ label {
 /* Checked mark aspect changes */
 [type="radio"]:not(:checked) + label:after {
   opacity: 0;
-  transition: all $transition-speed $easeOut;
+  transition: all $transition-speed ease-out;
 }
 [type="radio"]:checked + label:after {
   opacity: 1;
-  transition: all $transition-speed $easeOut;
+  transition: all $transition-speed ease-out;
 }
 [type="radio"]:disabled:checked + label:after {
   color: #999;

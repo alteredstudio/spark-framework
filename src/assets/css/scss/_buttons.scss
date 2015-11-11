@@ -11,7 +11,7 @@
   user-select: none;
   border-radius: $radius;
   padding: $button-font-padding;
-  transition: all $transition-speed $easeOut;
+  transition: all $transition-speed ease-out;
   background: $button-bg-color;
   color: $button-font-color;
   border: $border solid $button-bg-color;

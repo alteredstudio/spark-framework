@@ -1,3 +1,4 @@
+// Menu Horizontal Open
 body.fixed-menu-horizontal{
   nav.menu-horizontal{
     background: $nav-bg-color;
@@ -8,7 +9,7 @@ body.fixed-menu-horizontal{
     z-index: 5;
   }
 }
-
+// Menu Horizontal
 nav.menu-horizontal{
   background: transparent;
   position: absolute;
@@ -49,7 +50,7 @@ nav.menu-horizontal{
   }
 }
 
-
+// Overlay Menu Open
 body.overlayMenu-open{
   height: 100%;
   overflow: hidden;
@@ -60,6 +61,7 @@ body.overlayMenu-open{
     opacity: 1;
   }
 }
+// Overlay Menu
 .overlay-menu{
   background: $color-6;
   padding: 0px;
@@ -101,7 +103,7 @@ body.overlayMenu-open{
 }
 
 
-// Mobile Menu
+// Overlay Menu Trigger Open
 body.overlayMenu-open #menu-trigger{
   .inner{
     span{
@@ -119,6 +121,7 @@ body.overlayMenu-open #menu-trigger{
     }
   }
 }
+// Overlay Menu Trigger
 #menu-trigger {
   position: absolute;
   top: 0;
@@ -127,7 +130,7 @@ body.overlayMenu-open #menu-trigger{
   height: 75px;
   padding: 23px;
   transform: rotate(0deg);
-  transition: .3s ease-in-out;
+  transition: .3s ease-out;
   cursor: pointer;
   z-index: 100;
   .inner{
@@ -145,7 +148,7 @@ body.overlayMenu-open #menu-trigger{
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
-      transition: .15s ease-in-out;
+      transition: .15s ease-out;
       &.one{
         top: 0px;
       }
@@ -158,74 +161,3 @@ body.overlayMenu-open #menu-trigger{
     }
   }
 }
-
-/* .menu-trigger{
-  position: absolute;
-  padding: 24px 28px;
-  top: .7rem;
-  right: 0.85rem;
-  z-index: 100;
-  cursor: pointer;
-  span{
-    background: $gray-6;
-    position: absolute;
-    transition: transform .35s ease-out;
-    width:32px;
-    height:2px;
-    display:block;
-    &.one{
-        top:13px;
-        left:10px;
-        opacity:1;
-    }
-    &.two{
-        top:24px;
-        left:10px;
-        opacity:1;
-    }
-    &.three{
-        top:35px;
-        left:10px;
-        opacity:1;
-    }
-    &.four{
-        transform: rotate(0deg);
-        top:23px;
-        left:10px;
-        opacity:0;
-    }
-    &.five{
-        transform: rotate(0deg);
-        top:23px;
-        left:10px;
-        opacity:0;
-    }
-  }
-}
-
-body.overlayMenu-open{
-  .menu-trigger span{
-    &.one{
-        transform: rotate(45deg);
-        opacity:0;
-    }
-    &.two{
-        opacity:0;
-    }
-    &.three{
-        transform: rotate(-45deg);
-        opacity:0;
-    }
-    &.four{
-        opacity:1;
-        margin:0px 0px;
-        transform: rotate(45deg);
-    }
-    &.five{
-        opacity:1;
-        margin:0px 0px;
-        transform: rotate(-45deg);
-    }
-  }
-}
- */

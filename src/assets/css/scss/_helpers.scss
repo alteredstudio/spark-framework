@@ -24,9 +24,9 @@ section.block{
 /* Verically center and set background to cover, set height to viewport in js. */
 .cover{
   @extend .invert;
-  //background: url('assets/img/spark.jpg') no-repeat center top;
-  //background-size: cover;
+  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
   background: $color-6;
+  background-size: cover;
   position: relative;
   // Center with Flexbox
   display: flex;

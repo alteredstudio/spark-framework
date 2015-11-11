@@ -79,8 +79,3 @@ $breakpoint-mobile:                    ($container-mobile + 20px);
 $breakpoint-tablet:                    ($container-tablet + 20px);
 $breakpoint-desktop:                   ($container-desktop + 20px);
 $breakpoint-tv:                        ($container-tv + 20px);
-
-// Easing
-$easeIn:                               cubic-bezier(0.950, 0.050, 0.795, 0.035);
-$easeOut:                              cubic-bezier(0.190, 1.000, 0.220, 1.000);
-$easeInOut:                            cubic-bezier(1.000, 0.000, 0.000, 1.000);
