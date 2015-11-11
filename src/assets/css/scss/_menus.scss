@@ -21,7 +21,7 @@ nav.menu-horizontal{
     .branding{
       @extend .left;
       color: $color-1;
-      padding: 1.2rem 0.0rem;
+      padding: 1.1rem 0.0rem;
       font-weight: $font-bold;
       border: 0;
     }
@@ -32,7 +32,7 @@ nav.menu-horizontal{
       li{
         a{
           color: $color-3;
-          padding: 1.2rem 1.2rem;
+          padding: 1.1rem 1.1rem;
           display: block;
           border: 0;
           &:active,
@@ -43,7 +43,7 @@ nav.menu-horizontal{
         }
       }
       li:last-child a {
-        padding: 1.2rem 0.0rem 1.2rem 1.2rem;
+        padding: 1.1rem 0.0rem 1.1rem 1.1rem;
       }
     }
   }
@@ -102,36 +102,38 @@ body.overlayMenu-open{
 
 
 // Mobile Menu
-#menu-trigger {
-  width: 80px;
-  height: 72px;
-  padding: 20px;
-  position: relative;
-  margin: 50px auto;
-  transform: rotate(0deg);
-  transition: .3s ease-in-out;
-  cursor: pointer;
-  &.is-active{
-    .inner{
-      span{
-        &:nth-child(1), &:nth-child(4)  {
-          top: 14px;
-          width: 0%;
-          left: 50%;
-        }
-        &:nth-child(2) {
-          transform: rotate(45deg);
-        }
-        &:nth-child(3) {
-          transform: rotate(-45deg);
-        }
+body.overlayMenu-open #menu-trigger{
+  .inner{
+    span{
+      &.one, &.four{
+        top: 13px;
+        width: 0%;
+        left: 50%;
+      }
+      &.two{
+        transform: rotate(45deg);
+      }
+      &.three{
+        transform: rotate(-45deg);
       }
     }
   }
+}
+#menu-trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 84px;
+  height: 75px;
+  padding: 23px;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  z-index: 100;
   .inner{
     position: relative;
-    width: 40px;
-    height: 32px;
+    width: 38px;
+    height: 29px;
     padding: 0;
     span {
       display: block;
@@ -143,15 +145,15 @@ body.overlayMenu-open{
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
-      transition: .2s ease-in-out;
-      &:nth-child(1) {
+      transition: .15s ease-in-out;
+      &.one{
         top: 0px;
       }
-      &:nth-child(2), &:nth-child(3) {
-        top: 14px;
+      &.two, &.three{
+        top: 13px;
       }
-      &:nth-child(4) {
-        top: 28px;
+      &.four{
+        top: 26px;
       }
     }
   }

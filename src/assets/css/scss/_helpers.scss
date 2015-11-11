@@ -80,7 +80,7 @@ section.block{
   h1,h2,h3,h4,h5,h6,p{
     color: $gray-0;
   }
-  .menu-trigger span, .overlay-close span{
+  #menu-trigger .inner span, .overlay-close .inner span{
     background: $gray-0;
   }
   input{

@@ -31,6 +31,42 @@ body.overlay-open{
     text-align: center;
     flex: none;
   }
+
+  .overlay-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 84px;
+    height: 75px;
+    padding: 23px;
+    cursor: pointer;
+    z-index: 999;
+    .inner{
+      position: relative;
+      width: 38px;
+      height: 29px;
+      padding: 0;
+      span{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $gray-4;
+        border-radius: 0px;
+        opacity: 1;
+        left: 0;
+        top: 13px;
+        &.one{
+          transform: rotate(45deg);
+        }
+        &.two{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+/*
   .overlay-close{
     position: absolute;
     padding: 24px 28px;
@@ -59,7 +95,7 @@ body.overlay-open{
         transform: rotate(-45deg);
       }
     }
-  }
+  } */
 }// End Overlay
 
 

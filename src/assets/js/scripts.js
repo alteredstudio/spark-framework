@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Menu overlay
   function menuOverlay() {
-    $('.menu-trigger').click(function () {
+    $('#menu-trigger').click(function () {
 
       if( $('body.overlayMenu-open').length > 0 ) {
         // Menu Open
