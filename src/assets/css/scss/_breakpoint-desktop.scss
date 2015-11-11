@@ -6,3 +6,20 @@
     content: " Desktop";
   }
 }
+
+// General Resets
+.no-float-desktop { float: none; }
+.no-padding-desktop { padding: 0; }
+.no-margin-desktop { margin: 0; }
+
+// Display Types
+.none-desktop { display: none; }
+.block-desktop { display: block; }
+.inline-block-desktop { display: inline-block; }
+.inline-desktop { display: inline; }
+
+// Text Alignments
+.text-left-desktop { text-align: left; }
+.text-right-desktop { text-align: right; }
+.text-center-desktop { text-align: center; }
+.text-justify-desktop { text-align: justify; }

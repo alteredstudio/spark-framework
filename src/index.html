@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- SEO Details -->
   <title>Spark HTML/CSS Framework</title>
   <meta name="description" content="A Responsive HTML/CSS Framework built to be: light, easy to customize, and attractive.">
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimal-ui">
 
+  <!-- Responsive Viewport -->
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+  <!-- Icons for your site -->
   <link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="assets/img/icons/favicon.png">
 
-  <!-- <link rel="stylesheet" href="assets/css/styles.css" inline> -->
-
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Add 'inline' to have gulp inline these stylesheets -->
+  <link rel='stylesheet' href='assets/css/styles.min.css'>
+  <!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Vollkorn:400,700'> --><!-- https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Vollkorn -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'><!-- https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Lato -->
+  <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
 
 </head>
-<!-- Body options: .fixed-menu-horizontal .overlay-grid -->
+
 <body class="">
 
   <header class="cover">
@@ -223,11 +230,11 @@
 
       <form action="#">
         <p>
-          <input type="checkbox" id="test1" />
+          <input type="checkbox" id="test1" checked="checked" />
           <label for="test1">Red</label>
         </p>
         <p>
-          <input type="checkbox" id="test2" checked="checked" />
+          <input type="checkbox" id="test2" />
           <label for="test2">Yellow</label>
         </p>
         <p>
@@ -253,15 +260,11 @@
           <label for="radio02"><span></span>Radio Button 2</label>
         </p>
         <p>
-          <input type="radio" id="radio03" name="radio" />
-          <label for="radio03"><span></span>Radio Button 3</label>
-        </p>
-        <p>
-          <input type="radio" id="radio04" name="radioother" disabled="disabled" />
+          <input type="radio" id="radio04" name="radioother" checked="checked" disabled="disabled" />
           <label for="radio04"><span></span>Radio Button 4</label>
         </p>
         <p>
-          <input type="radio" id="radio05" name="radioother" checked="checked" disabled="disabled" />
+          <input type="radio" id="radio05" name="radioother" disabled="disabled" />
           <label for="radio05"><span></span>Radio Button 5</label>
         </p>
 
@@ -503,11 +506,10 @@
 
   </div>
 
-<!--   <script src="assets/js/vendor/jquery-1.11.3.min.js" inline></script>
-<script src="assets/js/scripts.js" inline></script> -->
 
+  <!-- Add 'inline' to have gulp inline these scripts -->
   <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
 
   <!-- Google Analytics - Update UA-XXXXX-X ID -->
 <!--   <script>
@@ -518,8 +520,6 @@
   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
   ga('create','UA-XXXXX-X');ga('send','pageview');
 </script> -->
-
-<!-- <div class="overlay-grid"></div> --><!-- overlay dev layout grid-->
 
 </body>
 </html>

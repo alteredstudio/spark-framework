@@ -3,3 +3,20 @@
     content: " TV";
   }
 }
+
+// General Resets
+.no-float-tv { float: none; }
+.no-padding-tv { padding: 0; }
+.no-margin-tv { margin: 0; }
+
+// Display Types
+.none-tv { display: none; }
+.block-tv { display: block; }
+.inline-block-tv { display: inline-block; }
+.inline-tv { display: inline; }
+
+// Text Alignments
+.text-left-tv { text-align: left; }
+.text-right-tv { text-align: right; }
+.text-center-tv { text-align: center; }
+.text-justify-tv { text-align: justify; }

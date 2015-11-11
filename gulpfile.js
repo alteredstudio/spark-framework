@@ -35,7 +35,7 @@ gulp.task('sass', function () {
     .pipe(csslint())
     .pipe(autoprefixer())
     .pipe(minifyCSS())
-    .pipe(concat('styles.css'))
+    .pipe(concat('styles.min.css'))
     .pipe(gulp.dest('./src/assets/css/'))
     .pipe(gulp.dest('./dist/assets/css/'))
     .pipe(browserSync.reload({
@@ -58,7 +58,7 @@ gulp.task('less', function () {
   .pipe(csslint())
   .pipe(autoprefixer())
   .pipe(minifyCSS())
-  .pipe(concat('styles.css'))
+  .pipe(concat('styles.min.css'))
   .pipe(gulp.dest('./src/assets/css/'))
   .pipe(gulp.dest('./dist/assets/css/'))
   .pipe(browserSync.reload({
@@ -77,6 +77,7 @@ gulp.task('movecss', function () {
 gulp.task('jsmin', function() {
   return gulp.src('./src/assets/js/**/*.js')
     .pipe(uglify())
+    .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest('./dist/assets/js/'));
 });
 

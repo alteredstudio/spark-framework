@@ -1,7 +1,7 @@
 # Spark HTML/CSS Framework :sparkles:
 A Responsive HTML/CSS Framework built to be: light, easy to customize, and attractive.
 
-CSS file size compressed is 18k. [See Demo](http://johnmacmenamin.com/projects/spark-framework/)
+<!-- CSS file size compressed is 18k. --> [See Demo](http://johnmacmenamin.com/projects/spark-framework/)
 
 >“Simplicity is an acquired taste. Mankind, left free, instinctively complicates life.”
 

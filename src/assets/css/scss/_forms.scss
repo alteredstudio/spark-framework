@@ -67,28 +67,6 @@ label {
   }
 }
 
-// Checkbox and Radio
-/* .checkbox,
-.radio {
-  display: inline-block;
-  position: relative;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  label {
-    margin-left: 25px;
-    padding-top: 0;
-    display: inline-block;
-  }
-  input[type="checkbox"],
-  input[type="radio"] {
-    position: absolute;
-    top: 9px;
-    left: 2px;
-  }
-} */
-
-
-
 
 
 /* Custom Checkboxes */
@@ -107,7 +85,6 @@ label {
 /* Uncheckbox */
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before {
-
   content: '\f372';
   font-size: 28px;
   position: absolute;

@@ -3,3 +3,20 @@
     content: " Mobile";
   }
 }
+
+// General Resets
+.no-float-mobile { float: none; }
+.no-padding-mobile { padding: 0; }
+.no-margin-mobile { margin: 0; }
+
+// Display Types
+.none-mobile { display: none; }
+.block-mobile { display: block; }
+.inline-block-mobile { display: inline-block; }
+.inline-mobile { display: inline; }
+
+// Text Alignments
+.text-left-mobile { text-align: left; }
+.text-right-mobile { text-align: right; }
+.text-center-mobile { text-align: center; }
+.text-justify-mobile { text-align: justify; }

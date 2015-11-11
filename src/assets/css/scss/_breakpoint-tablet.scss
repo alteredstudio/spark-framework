@@ -3,3 +3,20 @@
     content: " Tablet";
   }
 }
+
+// General Resets
+.no-float-tablet { float: none; }
+.no-padding-tablet { padding: 0; }
+.no-margin-tablet { margin: 0; }
+
+// Display Types
+.none-tablet { display: none; }
+.block-tablet { display: block; }
+.inline-block-tablet { display: inline-block; }
+.inline-tablet { display: inline; }
+
+// Text Alignments
+.text-left-tablet { text-align: left; }
+.text-right-tablet { text-align: right; }
+.text-center-tablet { text-align: center; }
+.text-justify-tablet { text-align: justify; }
