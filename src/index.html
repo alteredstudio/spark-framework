@@ -218,22 +218,73 @@
 
       <br />
       <br />
+      <h2>Checkboxes</h2>
+      <br />
+
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test1" />
+          <label for="test1">Red</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test2" checked="checked" />
+          <label for="test2">Yellow</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test3" checked="checked" disabled="disabled" />
+          <label for="test3">Green</label>
+        </p>
+          <p>
+            <input type="checkbox" id="test4" disabled="disabled" />
+            <label for="test4">Brown</label>
+        </p>
+
+        <br />
+        <br />
+        <h2>Radios</h2>
+        <br />
+
+        <p>
+          <input type="radio" id="radio01" name="radio" checked="checked" />
+          <label for="radio01"><span></span>Radio Button 1</label>
+        </p>
+        <p>
+          <input type="radio" id="radio02" name="radio" />
+          <label for="radio02"><span></span>Radio Button 2</label>
+        </p>
+        <p>
+          <input type="radio" id="radio03" name="radio" />
+          <label for="radio03"><span></span>Radio Button 3</label>
+        </p>
+        <p>
+          <input type="radio" id="radio04" name="radioother" disabled="disabled" />
+          <label for="radio04"><span></span>Radio Button 4</label>
+        </p>
+        <p>
+          <input type="radio" id="radio05" name="radioother" checked="checked" disabled="disabled" />
+          <label for="radio05"><span></span>Radio Button 5</label>
+        </p>
+
+      </form>
+
+      <br />
+      <br />
       <h2>Buttons</h2>
       <br />
 
-      <a href="#" class="btn">A Button</a>
-      <button class="btn">Button</button>
-      <button class="btn hollow">Hollow Button</button>
-      <submit class="btn">Submit Button</submit>
-      <button class="btn" disabled>Disabled Button</button>
+      <a href="#" class="btn margin-bottom-2">A Button</a>
+      <button class="btn margin-left-2 margin-bottom-2">Button</button>
+      <button class="btn hollow margin-left-2 margin-bottom-2">Hollow Button</button>
+      <submit class="btn margin-left-2 margin-bottom-2">Submit Button</submit>
+      <button class="btn margin-left-2 margin-bottom-2" disabled>Disabled Button</button>
       <br />
       <br />
       <div class="row">
         <div class="col-md-9">
-          <submit class="btn btn-block">Block Submit</submit>
+          <submit class="btn btn-block margin-bottom-2">Block Submit</submit>
         </div>
         <div class="col-md-3">
-          <button class="btn-link">Link Style Button</button>
+          <button class="btn-link margin-bottom-2">Link Style Button</button>
         </div>
       </div>
       <br />
@@ -323,10 +374,10 @@
               <input type="password" placeholder="Password">
             </fieldset>
 
-            <span class="checkbox">
-              <label for="checkbox-example">Remember me</label>
-              <input id="checkbox-example" type="checkbox">
-            </span>
+            <p>
+              <input type="checkbox" id="remember" />
+              <label for="remember">Remember me</label>
+            </p>
 
           </div>
 

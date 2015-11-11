@@ -50,6 +50,14 @@ section.block{
 
 .callout{
   background: $callout-bg-color;
+
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before,
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    background: $callout-bg-color;
+  }
+
 }
 .footer{
   padding-top: 40px;

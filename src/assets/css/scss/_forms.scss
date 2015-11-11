@@ -15,7 +15,7 @@ input[type=search] {
 input[type=text],input[type=search],input[type=date],input[type=password], select{
   height: 2.8rem;
 }
-input[type=text],input[type=search],input[type=date],input[type=password],textarea{
+input[type=text],input[type=search],input[type=date],input[type=password],input[type=email],textarea{
   -webkit-appearance: none;
 }
 input, textarea, select{
@@ -68,7 +68,7 @@ label {
 }
 
 // Checkbox and Radio
-.checkbox,
+/* .checkbox,
 .radio {
   display: inline-block;
   position: relative;
@@ -85,4 +85,121 @@ label {
     top: 9px;
     left: 2px;
   }
+} */
+
+
+
+
+
+/* Custom Checkboxes */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  font-family: "Ionicons";
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+}
+/* Uncheckbox */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+
+  content: '\f372';
+  font-size: 28px;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+}
+/* Checked */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '\f373';
+  font-size: 28px;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  line-height: 0.8;
+  color: $color-6;
+  background: #ffffff;
+  padding: 5px;
+}
+/* Checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transition: all $transition-speed $easeOut;
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transition: all $transition-speed $easeOut;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+
+
+
+
+/* Custom Radio */
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+  font-family: "Ionicons";
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+}
+/* Unchecked */
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+
+  content: '\f3a6';
+  font-size: 28px;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+}
+/* Checked */
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+  content: '\f3a7';
+  font-size: 28px;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  line-height: 0.8;
+  color: $color-6;
+  background: #ffffff;
+  padding: 5px;
+}
+/* Checked mark aspect changes */
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transition: all $transition-speed $easeOut;
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  transition: all $transition-speed $easeOut;
+}
+[type="radio"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="radio"]:disabled + label {
+  color: #aaa;
 }
