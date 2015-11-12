@@ -69,6 +69,8 @@ input[type="button"] {
   font-weight: normal;
   color: $button-bg-color;
   border: 0;
+  line-height: 1.0rem;
+  height: 2.8rem
   &:hover,
   &:active,
   &.active,

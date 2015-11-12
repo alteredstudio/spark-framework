@@ -1,12 +1,13 @@
 // Menu Horizontal Open
 body.fixed-menu-horizontal{
+  padding-top: 72px;
   nav.menu-horizontal{
     background: $nav-bg-color;
     position: fixed;
     top:0;
     left: 0px;
     width: 100%;
-    z-index: 5;
+    z-index: 100;
   }
 }
 // Menu Horizontal

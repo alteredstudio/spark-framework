@@ -10,12 +10,18 @@
 }
 
 body{
+  // No Horizontal Scrollbars
   overflow-x: hidden;
+  // Flexbox Sticky Footer
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 section.block{
-  padding-top: 90px;
-  padding-bottom: 90px;
+  // @extend .pad-both-5;
+  // Flexbox Sticky Footer
+  flex: 1;
   .inner{
     @extend .container;
   }
@@ -58,6 +64,9 @@ section.block{
     background: $callout-bg-color;
   }
 
+}
+.muted{
+  color: $gray-4;
 }
 .footer{
   padding-top: 40px;
