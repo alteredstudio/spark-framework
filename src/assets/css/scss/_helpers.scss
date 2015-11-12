@@ -101,11 +101,6 @@ section.block{
   a, .link {
     color: $gray-0;
     border-bottom: 2px solid $gray-0;
-    &:active,
-    &:hover {
-      color: $gray-0;
-      border-bottom: 2px solid $gray-0;
-    }
   }
   #menu-trigger .inner span, .overlay-close .inner span{
     background: $gray-0;
