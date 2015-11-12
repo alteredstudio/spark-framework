@@ -73,6 +73,15 @@ section.block{
   padding-bottom: 40px;
   color: $gray-4;
   background: $gray-8;
+  a, .link {
+    color: $gray-3;
+    border-bottom: 0 solid $gray-4;
+    padding-bottom: 0;
+    &:active,
+    &:hover {
+      color: $gray-0;
+    }
+  }
 }
 .huge{
   font-size: 3.8rem;
@@ -88,6 +97,15 @@ section.block{
   color: $gray-0;
   h1,h2,h3,h4,h5,h6,p{
     color: $gray-0;
+  }
+  a, .link {
+    color: $gray-0;
+    border-bottom: 2px solid $gray-0;
+    &:active,
+    &:hover {
+      color: $gray-0;
+      border-bottom: 2px solid $gray-0;
+    }
   }
   #menu-trigger .inner span, .overlay-close .inner span{
     background: $gray-0;

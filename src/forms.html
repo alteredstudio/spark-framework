@@ -55,133 +55,182 @@
   <section class="block">
     <div class="inner">
 
+      <h2>Checkboxes</h2>
+      <hr />
+      <br />
 
+      <form action="#">
+        <p>
+          <input type="checkbox" id="test1" checked="checked" />
+          <label for="test1">Red</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test2" />
+          <label for="test2">Yellow</label>
+        </p>
+        <p>
+          <input type="checkbox" id="test3" checked="checked" disabled="disabled" />
+          <label for="test3">Green</label>
+        </p>
+          <p>
+            <input type="checkbox" id="test4" disabled="disabled" />
+            <label for="test4">Brown</label>
+        </p>
+
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="inner">
+
+        <h2>Radios</h2>
+        <hr />
+        <br />
+
+        <p>
+          <input type="radio" id="radio01" name="radio" checked="checked" />
+          <label for="radio01"><span></span>Radio Button 1</label>
+        </p>
+        <p>
+          <input type="radio" id="radio02" name="radio" />
+          <label for="radio02"><span></span>Radio Button 2</label>
+        </p>
+        <p>
+          <input type="radio" id="radio04" name="radioother" checked="checked" disabled="disabled" />
+          <label for="radio04"><span></span>Radio Button 4</label>
+        </p>
+        <p>
+          <input type="radio" id="radio05" name="radioother" disabled="disabled" />
+          <label for="radio05"><span></span>Radio Button 5</label>
+        </p>
+
+      </form>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="inner">
+
+      <h2>Buttons</h2>
+      <hr />
+      <br />
+
+      <a href="#" class="btn margin-bottom-2">A Button</a>
+      <button class="btn margin-bottom-2">Button</button>
+      <button class="btn hollow margin-bottom-2">Hollow Button</button>
+      <submit class="btn margin-bottom-2">Submit Button</submit>
+      <button class="btn margin-bottom-2" disabled>Disabled Button</button>
+      <br />
+      <br />
       <div class="row">
-
-        <div class="col-md-7">
-
-          <div class="row">
-            <div class="col-md-12">
-              <p>Customer Information</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <input type="email" placeholder="Email">
-            </div>
-          </div>
-
-          <br />
-
-          <div class="row">
-            <div class="col-md-12">
-              <p>Shipping address</p>
-            </div>
-          </div>
-
-          <fieldset class="field-group">
-            <input type="text" placeholder="First Name" class="col-xs-6 left top-left">
-            <input type="text" placeholder="Last Name" class="col-xs-6 top-right no-left-border">
-            <input type="text" placeholder="Company (optional)" class="col-md-12">
-            <input type="text" placeholder="Address" class="col-md-7 left">
-            <input type="text" placeholder="Apt, suite, etc. (optional)" class="col-md-5 no-left-border">
-            <input type="text" placeholder="City" class="col-md-12">
-            <input type="text" placeholder="Country" class="left col-md-5">
-            <input type="text" placeholder="State" class="left col-xs-6 col-md-5 no-left-border">
-            <input type="text" placeholder="Zip" class="col-xs-6 col-md-2 no-left-border">
-            <input type="phone" placeholder="Phone (optional)" class="col-md-12">
-
-            <br />
-            <br />
-
-            <div class="row">
-              <div class="col-xs-7">
-                <button class="btn btn-link margin-bottom-2 left">Return to Cart</button>
-              </div>
-              <div class="col-xs-5">
-                <submit class="right btn margin-bottom-2">Continue to Shipping</submit>
-              </div>
-            </div>
-
-
+        <div class="col-md-9">
+          <submit class="btn btn-block margin-bottom-2">Block Submit</submit>
         </div>
-
-        <div class="col-md-5">
-
-          <div class="row">
-            <div class="col-xs-7">
-              <p>Product Description</p>
-            </div>
-            <div class="col-xs-5">
-              <p class="right">$65.00</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12"><hr /></div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-8">
-              <input type="text" placeholder="Discount">
-            </div>
-            <div class="col-md-4">
-              <button class="btn btn-block">Apply</button>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12"><hr /></div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-7">
-              <p>Subtotal</p>
-            </div>
-            <div class="col-xs-5">
-              <p class="right">$65.00</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-7">
-              <p>Shipping</p>
-            </div>
-            <div class="col-xs-5">
-              <p class="right">-</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-7">
-              <p>Taxes</p>
-            </div>
-            <div class="col-xs-5">
-              <p class="right">$0.00</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12"><hr /></div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-7">
-              <p>Total</p>
-            </div>
-            <div class="col-xs-5">
-              <p class="right"><small class="muted">USD</small> <span class="font-bold">$65.00</span></p>
-            </div>
-          </div>
-
+        <div class="col-md-3">
+          <button class="btn-link margin-bottom-2">Link Style Button</button>
         </div>
-
       </div>
 
     </div>
   </section>
+
+  <section class="block">
+    <div class="inner">
+
+      <h2>Form</h2>
+      <hr />
+      <br />
+
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Email Address</label>
+            <input type="text" class="">
+          </div>
+          <div class="col-md-6">
+            <label>Password</label>
+            <input type="password" class="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label>Comments</label>
+            <textarea name="name" rows="8" cols="40">Textarea</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Select</label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+              <option>Option 5</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <br />
+            <button type="submit" class="btn">Sign In</button>
+            <button type="reset" class="btn hollow margin-left-2">Go Back</button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="inner">
+
+      <h2>Grouped Form</h2>
+      <hr />
+      <br />
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <fieldset class="field-group">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email">
+          </fieldset>
+
+          <fieldset class="field-group">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+          </fieldset>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <fieldset class="field-group">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Apt, suite, etc. (optional)">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Country">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Zip">
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button type="submit" class="btn">Sign In</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
 
   <footer class="footer">
     <div class="text-center">Designed and built with all the &#9829; in the world</div>
