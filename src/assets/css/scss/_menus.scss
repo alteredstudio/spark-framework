@@ -1,6 +1,6 @@
 // Menu Horizontal Open
 body.fixed-menu-horizontal{
-  padding-top: 72px;
+  margin-top: 72px;
   nav.menu-horizontal{
     background: $nav-bg-color;
     position: fixed;
@@ -8,6 +8,16 @@ body.fixed-menu-horizontal{
     left: 0px;
     width: 100%;
     z-index: 100;
+  }
+}
+body.no-cover{
+  margin-top: 72px;
+  &.overlayMenu-open,
+  &.overlay-open{
+    margin-top: 0px;
+  }
+  nav.menu-horizontal{
+    background: $nav-bg-color;
   }
 }
 // Menu Horizontal
@@ -58,12 +68,15 @@ body.overlayMenu-open{
   width: 100%;
   position: fixed;
   .overlay-menu{
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
   }
 }
 // Overlay Menu
 .overlay-menu{
+  touch-action: manipulation;
+  user-select: none;
+  cursor: pointer;
   background: $color-6;
   padding: 0px;
   margin: 0px;
@@ -92,6 +105,18 @@ body.overlayMenu-open{
         display: block;
         font-size: 28px;
         border: 0;
+        // Menu Items Effect
+        transition: all $transition-speed ease-out;
+        position: relative;
+        top: -30px;
+        opacity: 0;
+        visibility: hidden;
+        // Menu Items Effect Open
+        &.is-active{
+          top: 0px;
+          opacity: 1;
+          visibility: visible;
+        }
         &:active,
         &.active,
         &:hover {

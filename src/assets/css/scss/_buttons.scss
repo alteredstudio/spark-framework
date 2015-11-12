@@ -7,8 +7,8 @@
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
-  cursor: pointer;
   user-select: none;
+  cursor: pointer;
   border-radius: $radius;
   padding: $button-font-padding;
   transition: all $transition-speed ease-out;
@@ -68,9 +68,9 @@ input[type="button"] {
   font-size: $body-font-size;
   font-weight: normal;
   color: $button-bg-color;
-  border: 0;
+  border: $border solid transparent;
   line-height: 1.0rem;
-  height: 2.8rem
+  height: 2.8rem;
   &:hover,
   &:active,
   &.active,
@@ -78,6 +78,6 @@ input[type="button"] {
     cursor: pointer;
     color: $button-bg-color-hover;
     background-color: transparent;
-    border: 0;
+    border: $border solid transparent;
   }
 }

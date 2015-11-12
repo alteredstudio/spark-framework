@@ -51,7 +51,7 @@ label {
 
 // Grouped Fields
 .field-group {
-  input{
+  input,.btn{
     border-radius: 0;
     margin: 0;
     &:not(:last-of-type):not(:focus) {
@@ -64,6 +64,28 @@ label {
       border-radius: 0 0 $radius $radius;
       margin: 0 0 10px;
     }
+    .no-left-border{
+      border-left-color: transparent !important;
+    }
+    .top{
+      border-radius: $radius $radius 0 0 !important;
+    }
+    .top-left{
+      border-radius: $radius 0 0 0 !important;
+    }
+    .top-right{
+      border-radius: 0 $radius 0 0 !important;
+    }
+    .bottom{
+      border-radius: 0 0 $radius $radius !important;
+    }
+    .bottom-left{
+      border-radius: 0 0 0 $radius !important;
+    }
+    .bottom-right{
+      border-radius: 0 0 $radius 0 !important;
+    }
+
   }
 }
 

@@ -25,24 +25,38 @@ body.overlay-open{
   &.is-active{
     visibility: visible;
     opacity: 1;
+    .inner{
+      opacity: 1;
+      visibility: visible;
+      top: 0px;
+    }
   }
   .inner{
     @extend .container;
     // Center with Flexbox
     text-align: center;
     flex: none;
+
+    transition: all $transition-speed ease-out;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: -30px;
   }
   // Overlay Close
   .overlay-close{
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
     width: 84px;
     height: 75px;
     padding: 23px;
-    cursor: pointer;
     z-index: 999;
     .inner{
+      transition: none;
       position: relative;
       width: 38px;
       height: 29px;
