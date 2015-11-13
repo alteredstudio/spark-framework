@@ -1,7 +1,7 @@
 // Color Scheme
 $gray-0:                               #ffffff;
 $gray-1:                               #fafafa;
-$gray-2:                               #ececec;
+$gray-2:                               #eeeeee;
 $gray-3:                               #dddddd;
 $gray-4:                               #b0b0b0;
 $gray-5:                               #909090;
@@ -72,11 +72,11 @@ $container-mobile: 300px;
 $container-tablet: 768px;
 $container-desktop: 960px;
 $container-tv: 1400px;
-$column-gutter: 25px;
+$column-gutter: 20px;
 
 // Responsive Breakpoints
 $breakpoint-watch:                     ($container-watch + 0px);
-$breakpoint-mobile:                    ($container-mobile + 20px);
-$breakpoint-tablet:                    ($container-tablet + 20px);
-$breakpoint-desktop:                   ($container-desktop + 20px);
-$breakpoint-tv:                        ($container-tv + 20px);
+$breakpoint-mobile:                    ($container-mobile + 0px);
+$breakpoint-tablet:                    ($container-tablet + 0px);
+$breakpoint-desktop:                   ($container-desktop + 0px);
+$breakpoint-tv:                        ($container-tv + 0px);

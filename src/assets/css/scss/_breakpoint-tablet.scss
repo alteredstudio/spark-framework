@@ -9,6 +9,20 @@ section.block{
   padding-bottom: 60px;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: $container-tv;
+}
+
+.choke-mobile{
+  width: 100%;
+}
+
+#menu-trigger, .overlay-close {
+  right: 17px !important;
+}
+
 // General Resets
 .no-float-tablet { float: none; }
 .no-padding-tablet { padding: 0; }

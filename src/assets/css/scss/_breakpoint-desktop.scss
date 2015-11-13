@@ -12,8 +12,10 @@ section.block{
   padding-bottom: 90px;
 }
 
-.choke-mobile{
-  width: 100%;
+.container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: $container-tv;
 }
 
 // General Resets

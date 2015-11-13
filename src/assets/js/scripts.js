@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('body').addClass('overlayMenu-open').scrollTop(0);
         $('.overlay-menu ul li a').each(function(i){
           var t = $(this);
-          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 60);
+          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 50);
         });
       }
 
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     else {
-      $('body').addClass('fixed-menu-horizontal');
+      $('body').addClass('fixed-menu-horizontal').removeClass('fixed-menu-horizontal');
     }
 
   } // End: stickyNav
