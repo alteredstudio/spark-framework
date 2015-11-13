@@ -37,7 +37,7 @@ $body-font-family:                     $regular-font-family;
 $body-font-size:                       18px;
 $body-line-height:                     32px;
 $body-letter-spacing:                  0.015rem;
-$body-font-weight:                     $font-regular;
+$body-font-weight:                     $font-light;
 $body-font-color:                      $gray-9;
 
 // Layout
@@ -46,8 +46,8 @@ $callout-bg-color:                     $gray-2;
 $nav-bg-color:                         $color-6;
 $radius:                               0.3rem;
 $border:                               1px;
-$transition-speed:                     0.25s;
-$transition-speed-slow:                0.4s;
+$transition-speed:                     0.2s;
+$transition-speed-slow:                0.38s;
 
 // Buttons
 $button-font-size:                      18px;
@@ -66,17 +66,10 @@ $heading-font-color:                   $gray-10;
 $link-color:                           $color-6;
 $link-hover-color:                     $color-7;
 
-// Grid Containers
+// Grid Widths
 $container-watch: 0px;
 $container-mobile: 300px;
 $container-tablet: 768px;
 $container-desktop: 960px;
 $container-tv: 1400px;
 $column-gutter: 20px;
-
-// Responsive Breakpoints
-$breakpoint-watch:                     ($container-watch + 0px);
-$breakpoint-mobile:                    ($container-mobile + 0px);
-$breakpoint-tablet:                    ($container-tablet + 0px);
-$breakpoint-desktop:                   ($container-desktop + 0px);
-$breakpoint-tv:                        ($container-tv + 0px);

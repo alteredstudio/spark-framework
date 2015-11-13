@@ -23,12 +23,13 @@ input, textarea, select{
   background: $gray-0;
   font-size: 1rem;
 	padding: 10px 14px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 15px 0px;
 	width: 100%;
   border: 0;
 	border: $border solid $gray-4;
 	&:focus{
-		border: $border solid $gray-10;
+		border: 2px solid $gray-10;
+    padding: 9px 13px;
 	}
 }
 select {
@@ -51,6 +52,7 @@ label {
 
 // Grouped Fields
 .field-group {
+  margin-bottom:15px;
   input,.btn{
     border-radius: 0;
     margin: 0;
@@ -64,28 +66,6 @@ label {
       border-radius: 0 0 $radius $radius;
       margin: 0 0 10px;
     }
-    .no-left-border{
-      border-left-color: transparent !important;
-    }
-    .top{
-      border-radius: $radius $radius 0 0 !important;
-    }
-    .top-left{
-      border-radius: $radius 0 0 0 !important;
-    }
-    .top-right{
-      border-radius: 0 $radius 0 0 !important;
-    }
-    .bottom{
-      border-radius: 0 0 $radius $radius !important;
-    }
-    .bottom-left{
-      border-radius: 0 0 0 $radius !important;
-    }
-    .bottom-right{
-      border-radius: 0 0 $radius 0 !important;
-    }
-
   }
 }
 

@@ -13,27 +13,27 @@
 @import '_helpers.scss';
 
 // Watch Breakpoint Min 0em
-@media only screen and (min-width: $breakpoint-watch) {
+@media only screen and (min-width: $container-watch) {
   @import '_breakpoint-watch';
 }
 
 // Mobile Breakpoint Min 30em
-@media only screen and (min-width: $breakpoint-mobile) {
+@media only screen and (min-width: $container-mobile) {
   @import '_breakpoint-mobile';
 }
 
 // Tablet Breakpoint Min 50em
-@media only screen and (min-width: $breakpoint-tablet) {
+@media only screen and (min-width: $container-tablet) {
   @import '_breakpoint-tablet';
 }
 
 // Desktop Breakpoint Min 72em
-@media only screen and (min-width: $breakpoint-desktop) {
+@media only screen and (min-width: $container-desktop) {
   @import '_breakpoint-desktop';
 }
 
 // TV Breakpoint Min 100em
-@media only screen and (min-width: $breakpoint-tv) {
+@media only screen and (min-width: $container-tv) {
   @import '_breakpoint-tv';
 }
 

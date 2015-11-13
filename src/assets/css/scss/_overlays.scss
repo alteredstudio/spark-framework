@@ -36,12 +36,11 @@ body.overlay-open{
     // Center with Flexbox
     text-align: center;
     flex: none;
-
     transition: all $transition-speed ease-out;
     opacity: 0;
     visibility: hidden;
     position: relative;
-    top: -30px;
+    top: -25px;
   }
   // Overlay Close
   .overlay-close{

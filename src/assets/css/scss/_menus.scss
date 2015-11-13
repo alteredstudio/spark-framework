@@ -101,19 +101,19 @@ body.overlayMenu-open{
     li{
       a{
         color: $color-3;
-        padding: 0.75rem 0;
+        padding: 0.70rem 0;
         display: block;
         font-size: 29px;
         border: 0;
         // Menu Items Effect
-        transition: all $transition-speed ease-out;
+        transition: all $transition-speed-slow ease-out;
         position: relative;
-        top: -40px;
+        left: -20px;
         opacity: 0;
         visibility: hidden;
         // Menu Items Effect Open
         &.is-active{
-          top: 0px;
+          left: 0px;
           opacity: 1;
           visibility: visible;
         }

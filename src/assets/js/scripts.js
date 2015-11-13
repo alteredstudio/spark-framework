@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('body').addClass('overlayMenu-open').scrollTop(0);
         $('.overlay-menu ul li a').each(function(i){
           var t = $(this);
-          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 50);
+          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 35);
         });
       }
 

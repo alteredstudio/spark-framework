@@ -65,6 +65,16 @@ footer{
     @extend .container;
   }
   .footer{
+    .logo{
+      background: url('../img/logo.svg');
+      background-size: cover;
+      display: block;
+      width: 60px;
+      height: 40px;
+    }
+    .back-to-top{
+      font-size: 26px;
+    }
     padding-top: 35px;
     padding-bottom: 35px;
     color: $gray-3;
@@ -84,7 +94,7 @@ footer{
     padding-bottom: 28px;
     color: $gray-4;
     background: $gray-8;
-    font-size: 16px;
+    font-size: 15px;
     a, .link {
       color: $gray-3;
       border-bottom: 0 solid $gray-4;
@@ -104,7 +114,6 @@ footer{
 }
 .lead{
   font-size: 24px;
-  font-weight: 100;
 }
 
 .invert{
