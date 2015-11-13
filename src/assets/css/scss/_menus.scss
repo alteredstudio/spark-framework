@@ -1,6 +1,6 @@
 // Menu Horizontal Open
 body.fixed-menu-horizontal{
-  margin-top: 72px;
+  //margin-top: 72px;
   nav.menu-horizontal{
     background: $nav-bg-color;
     position: fixed;
@@ -10,16 +10,7 @@ body.fixed-menu-horizontal{
     z-index: 100;
   }
 }
-body.no-cover{
-  margin-top: 72px;
-  &.overlayMenu-open,
-  &.overlay-open{
-    margin-top: 0px;
-  }
-  nav.menu-horizontal{
-    background: $nav-bg-color;
-  }
-}
+
 // Menu Horizontal
 nav.menu-horizontal{
   background: transparent;
@@ -158,7 +149,7 @@ body.overlayMenu-open #menu-trigger{
   transform: rotate(0deg);
   transition: .3s ease-out;
   cursor: pointer;
-  z-index: 100;
+  z-index: 105;
   .inner{
     position: relative;
     width: 38px;

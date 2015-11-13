@@ -18,6 +18,13 @@ body{
   flex-direction: column;
 }
 
+// Adds a element to take up space for navbar
+header:after{
+  content: '';
+  display: block;
+  height: 72px;
+}
+
 section.block{
   // @extend .pad-both-5;
   // Flexbox Sticky Footer
@@ -29,6 +36,21 @@ section.block{
 
 /* Verically center and set background to cover, set height to viewport in js. */
 .cover{
+  @extend .invert;
+  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
+  background: $color-6;
+  background-size: cover;
+  position: relative;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner{
+    text-align: center;
+    flex: none;
+  }
+}
+.no-cover{
   @extend .invert;
   //background: $color-6 url('../img/spark.jpg') no-repeat center top;
   background: $color-6;

@@ -1,0 +1,38 @@
+.trigger-drawer{
+  display: block;
+  position: relative;
+  &:before{
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 20px;
+    content: '\f123';
+  }
+  &.is-active{
+    &:before{
+      content: '\f126';
+    }
+  }
+}
+.drawer{
+  transition: max-height $transition-speed 0s ease-out, opacity $transition-speed-slow .2s ease-out;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  &.is-active{
+    max-height: 999px;
+    opacity: 1;
+    visibility: visible;
+  }
+}

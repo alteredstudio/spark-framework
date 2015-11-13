@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
       'max-height': viewportHeight
     });
 
-    pageHeight = $(document).height();
+    // pageHeight = $(document).height();
   }
 
   // Menu overlay
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('body').addClass('overlayMenu-open').scrollTop(0);
         $('.overlay-menu ul li a').each(function(i){
           var t = $(this);
-          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 35);
+          setTimeout(function(){ t.addClass('is-active'); }, (i+1) * 38);
         });
       }
 
@@ -80,7 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
   function accordions() {
     $('.trigger-drawer').click(function () {
       var $target = $(this).attr('data-drawer');
+      var $this = $(this);
 
+      $this.toggleClass('is-active');
       $(".drawer." + $target).toggleClass('is-active');
 
     });
@@ -91,14 +93,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var scrollTop = $(window).scrollTop();
 
     if( $('.cover').length > 0 ){
+      // Page has cover
       if ( scrollTop > viewportHeight ) {
         $('body').addClass('fixed-menu-horizontal');
       } else {
         $('body').removeClass('fixed-menu-horizontal');
       }
     }
-    else {
-      $('body').addClass('fixed-menu-horizontal').removeClass('fixed-menu-horizontal');
+    if( $('.no-cover').length > 0 ){
+      // Page has cover
+      if ( scrollTop > 72 ) {
+        $('body').addClass('fixed-menu-horizontal');
+      } else {
+        $('body').removeClass('fixed-menu-horizontal');
+      }
     }
 
   } // End: stickyNav
