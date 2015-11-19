@@ -31,6 +31,10 @@
   &.align-right {
     justify-content: flex-end;
   }
+  &.reverse{
+    flex-direction: row-reverse;
+    -webkit-box-direction: reverse;
+  }
 }
 
 [class*="col"] {
@@ -44,22 +48,14 @@
 }
 
 @each $col in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-  .col-xs-#{$col} {
+  .col-mobile-#{$col} {
     @include col-size($col);
-  }
-}
-
-@media (min-width: #{$container-mobile}) {
-  @each $col in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-    .col-sm-#{$col} {
-      @include col-size($col);
-    }
   }
 }
 
 @media (min-width: #{$container-tablet}) {
   @each $col in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-    .col-md-#{$col} {
+    .col-tablet-#{$col} {
       @include col-size($col);
     }
   }
@@ -67,7 +63,7 @@
 
 @media (min-width: #{$container-desktop}) {
   @each $col in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-    .col-lg-#{$col} {
+    .col-desktop-#{$col} {
       @include col-size($col);
     }
   }
@@ -75,7 +71,7 @@
 
 @media (min-width: #{$container-tv}) {
   @each $col in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-    .col-xlg-#{$col} {
+    .col-tv-#{$col} {
       @include col-size($col);
     }
   }

@@ -29,13 +29,39 @@ input, textarea, select{
 	border: $border solid $gray-4;
   transition: border-color $transition-speed ease-out;
   &:hover{
-    border: 2px solid $gray-7;
-    padding: 9px 13px;
   }
 	&:focus{
 		border: 2px solid $gray-10;
     padding: 9px 13px;
 	}
+}
+.select{
+  position: relative;
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    right: 17px;
+    width: 0;
+  	height: 0;
+  	border-left: 4px solid transparent;
+  	border-right: 4px solid transparent;
+  }
+  &:before{
+    top: 14px;
+    border-bottom: 9px solid $gray-10;
+  }
+  &:after{
+    bottom: 14px;
+    border-top: 9px solid $gray-10;
+  }
+  select{
+    -webkit-appearance: none;
+    &:hover,
+    &:focus{
+      text-indent: 5px;
+    }
+  }
 }
 select {
   text-indent: 5px;
@@ -62,7 +88,7 @@ label {
 // Grouped Fields
 .field-group {
   margin-bottom:15px;
-  input,.btn{
+  input{
     border-radius: 0;
     margin: 0;
     &:not(:last-of-type):not(:focus) {

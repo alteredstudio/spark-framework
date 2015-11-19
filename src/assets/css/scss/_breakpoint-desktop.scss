@@ -13,17 +13,7 @@
 }
 
 .container {
-  margin: 0 auto;
   padding: 0 60px;
-  max-width: $container-tv;
-}
-
-.reverse-mobile{
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 // General Resets

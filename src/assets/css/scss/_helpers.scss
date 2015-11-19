@@ -35,7 +35,7 @@ header:after{
 
 /* Verically center and set background to cover, set height to viewport in js. */
 .cover{
-  @extend .invert;
+  @extend .contrast;
   //background: $color-6 url('../img/spark.jpg') no-repeat center top;
   background: $color-6;
   background-size: cover;
@@ -50,19 +50,8 @@ header:after{
   }
 }
 .no-cover{
-  @extend .invert;
-  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
+  @extend .contrast;
   background: $color-6;
-  background-size: cover;
-  position: relative;
-  // Center with Flexbox
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .inner{
-    text-align: center;
-    flex: none;
-  }
 }
 
 .box-row{
@@ -137,7 +126,7 @@ footer{
   font-size: 24px;
 }
 
-.invert{
+.contrast{
   color: $gray-0;
   h1,h2,h3,h4,h5,h6,p{
     color: $gray-0;
