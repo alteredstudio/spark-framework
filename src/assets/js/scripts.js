@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
   overlays();
   accordions();
   fixedNav();
+  smoothscroll();
+  smoothscrollToTop();
 
   // Update window dimensions on resize
   window.onresize = function(event) {
@@ -110,6 +112,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
   } // End: stickyNav
+
+  // Smoothscroll anchor links
+  function smoothscroll() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  } // End: smoothscroll
+
+  // Smoothscroll anchor links
+  function smoothscrollToTop() {
+    $('#toTop').click(function() {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 1000, 'swing');
+      return false;
+    });
+  } // End: smoothscroll
 
 
 }, false); // End DOMContentLoaded

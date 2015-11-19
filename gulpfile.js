@@ -33,24 +33,6 @@ gulp.task('sass', function () {
       return "Failed to Compile SCSS: " + error.message;
     })))
     .pipe(csslint())
-    .pipe(gulp.dest('./src/assets/css/'))
-    .pipe(gulp.dest('./dist/assets/css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-    .pipe(notify("SCSS Compiled Successfully :)"));
-});
-
-gulp.task('sassmin', function () {
-  return gulp.src('./src/assets/css/scss/include.scss')
-    .pipe(sass({
-      errLogToConsole: false,
-      paths: [ path.join(__dirname, 'scss', 'includes') ]
-    })
-    .on("error", notify.onError(function(error) {
-      return "Failed to Compile SCSS: " + error.message;
-    })))
-    .pipe(csslint())
     .pipe(autoprefixer())
     .pipe(minifyCSS())
     .pipe(concat('styles.min.css'))
@@ -87,21 +69,20 @@ gulp.task('less', function () {
 
 // Task to move compiled CSS to `dist` folder
 gulp.task('movecss', function () {
-  return gulp.src('./src/assets/fonts/')
-    .pipe(gulp.dest('./dist/assets/fonts/'));
+  return gulp.src('./src/assets/css/*.*')
+    .pipe(gulp.dest('./dist/assets/css/'));
 });
 
 // Task to move fonts to `dist` folder
 gulp.task('movefonts', function () {
-  return gulp.src('./src/assets/css/')
-    .pipe(gulp.dest('./dist/assets/css/'));
+  return gulp.src('./src/assets/fonts/**/*.*')
+    .pipe(gulp.dest('./dist/assets/fonts/'));
 });
 
 // Task to Minify JS
-gulp.task('js', function() {
-  return gulp.src('./src/assets/js/**/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/assets/js/'));
+gulp.task('movejs', function() {
+  return gulp.src('./src/assets/js/vendor/*.js')
+    .pipe(gulp.dest('./dist/assets/js/vendor/'));
 });
 
 // Task to Minify JS
@@ -158,5 +139,5 @@ gulp.task('default', function() {
 });
 
 gulp.task('prod', function() {
-  runSequence('sassmin', 'movefonts', 'imagemin', 'jsmin', 'inlinesource');
+  runSequence('sass', 'movecss', 'movefonts', 'imagemin', 'jsmin', 'movejs', 'inlinesource');
 });
