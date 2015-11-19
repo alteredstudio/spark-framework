@@ -61,23 +61,3 @@ input[type="button"] {
     width: 100%;
   }
 }
-
-// Make a button look and behave like a link
-.btn-link {
-  background-color: transparent;
-  font-size: $body-font-size;
-  font-weight: normal;
-  color: $button-bg-color;
-  border: $border solid transparent;
-  line-height: 1.0rem;
-  height: 2.8rem;
-  &:hover,
-  &:active,
-  &.active,
-  &:focus {
-    cursor: pointer;
-    color: $button-bg-color-hover;
-    background-color: transparent;
-    border: $border solid transparent;
-  }
-}

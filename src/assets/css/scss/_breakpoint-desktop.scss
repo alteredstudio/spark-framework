@@ -7,7 +7,7 @@
   }
 }
 
-section.block{
+.block{
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -18,16 +18,24 @@ section.block{
   max-width: $container-tv;
 }
 
+.reverse-mobile{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 // General Resets
 .no-float-desktop { float: none; }
 .no-padding-desktop { padding: 0; }
 .no-margin-desktop { margin: 0; }
 
 // Display Types
-.none-desktop { display: none; }
-.block-desktop { display: block; }
-.inline-block-desktop { display: inline-block; }
-.inline-desktop { display: inline; }
+.display-none-desktop { display: none; }
+.display-block-desktop { display: block; }
+.display-inline-block-desktop { display: inline-block; }
+.display-inline-desktop { display: inline; }
 
 // Text Alignments
 .text-left-desktop { text-align: left; }

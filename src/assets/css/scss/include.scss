@@ -13,15 +13,8 @@
 //@import '_colors.scss';
 @import '_helpers.scss';
 
-// Watch Breakpoint Min 0em
-@media only screen and (min-width: $container-watch) {
-  @import '_breakpoint-watch';
-}
-
-// Mobile Breakpoint Min 30em
-@media only screen and (min-width: $container-mobile) {
-  @import '_breakpoint-mobile';
-}
+// Mobile Breakpoint Min 0em
+@import '_breakpoint-mobile';
 
 // Tablet Breakpoint Min 50em
 @media only screen and (min-width: $container-tablet) {

@@ -1,7 +1,35 @@
+
+.desktop-up{ display: none; }
+.tablet-down{ display: block; }
+
 .breakpoint{
   &:after{
     content: " Mobile";
   }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 28px;
+  max-width: $container-tv;
+}
+
+.block{
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.choke{
+  max-width: 600px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choke-mobile{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // General Resets
@@ -10,10 +38,10 @@
 .no-margin-mobile { margin: 0; }
 
 // Display Types
-.none-mobile { display: none; }
-.block-mobile { display: block; }
-.inline-block-mobile { display: inline-block; }
-.inline-mobile { display: inline; }
+.display-none-mobile { display: none; }
+.display-block-mobile { display: block; }
+.display-inline-block-mobile { display: inline-block; }
+.display-inline-mobile { display: inline; }
 
 // Text Alignments
 .text-left-mobile { text-align: left; }

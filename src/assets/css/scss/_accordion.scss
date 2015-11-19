@@ -26,11 +26,12 @@
   }
 }
 .drawer{
-  transition: max-height $transition-speed 0s ease-out, opacity $transition-speed-slow .2s ease-out;
+  transition: max-height $transition-speed-slow $transition-speed ease-out, opacity $transition-speed-slow .0s linear;
   max-height: 0;
   opacity: 0;
   visibility: hidden;
   &.is-active{
+    transition: max-height $transition-speed-slow 0s ease-out, opacity $transition-speed-slow $transition-speed linear;
     max-height: 600px;
     opacity: 1;
     visibility: visible;
