@@ -53,3 +53,7 @@ Spark has two folders a 'src' and 'dist'. The src folder is the one you want to 
 ### License
 
 MIT Open Source
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alteredstudio/spark-framework/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
