@@ -1,48 +1,22 @@
 
-.desktop-up{ display: none; }
-.tablet-down{ display: block; }
+// ==========================================================================
+// Mobile Breakpoint
+// ==========================================================================
 
-.breakpoint{
-  &:after{
-    content: " Mobile";
+
+footer{
+  font-size: 15px;
+  color: $gray-4 !important;
+  .logo{
+    background: url('../img/logo.svg');
+    background-size: cover;
+    display: block;
+    width: 70px;
+    height: 50px;
+    border: 0 !important;
+  }
+  .back-to-top{
+    font-size: 26px;
+    border: 0 !important;
   }
 }
-
-.container {
-  padding: 0 28px;
-}
-
-.block{
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-.choke{
-  max-width: 600px;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.choke-mobile{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// General Resets
-.no-float-mobile { float: none; }
-.no-padding-mobile { padding: 0; }
-.no-margin-mobile { margin: 0; }
-
-// Display Types
-.display-none-mobile { display: none; }
-.display-block-mobile { display: block; }
-.display-inline-block-mobile { display: inline-block; }
-.display-inline-mobile { display: inline; }
-
-// Text Alignments
-.text-left-mobile { text-align: left; }
-.text-right-mobile { text-align: right; }
-.text-center-mobile { text-align: center; }
-.text-justify-mobile { text-align: justify; }

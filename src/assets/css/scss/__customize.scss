@@ -24,14 +24,13 @@ $color-9:                              #b00112;
 // Font Families
 $regular-font-family:                  helvetica, arial, sans-serif;
 $custom-font-family:                   Lato, helvetica, arial, sans-serif;
-$code-font-family:                     'courier new', monospace, serif;
 
 // Font Weights
 $font-light:                           300;
 $font-regular:                         400;
 $font-bold:                            700;
 
-// Body Typography
+// Body
 $body-background-color:                $gray-0;
 $body-font-family:                     $regular-font-family;
 $body-font-size:                       18px;
@@ -40,31 +39,28 @@ $body-letter-spacing:                  0.015rem;
 $body-font-weight:                     $font-light;
 $body-font-color:                      $gray-9;
 
+// Headings
+$heading-font-family:                  $custom-font-family;
+$heading-font-weight:                  $font-bold;
+$heading-font-color:                   $gray-10;
+
 // Layout
 $block-padding:                        90px;
-$callout-bg-color:                     $gray-2;
 $nav-bg-color:                         $color-6;
 $radius:                               0.3rem;
 $border:                               1px;
-$transition-speed:                     0.22s;
-$transition-speed-slow:                0.38s;
+$transition-speed:                     0.2s;
+$transition-speed-slow:                0.3s;
 
 // Buttons
 $button-font-size:                      18px;
 $button-font-weight:                    $font-regular;
 $button-font-padding:                   0.84rem 1.1rem;
 $button-bg-color:                       $color-6;
-$button-bg-color-hover:                 $color-7;
-$button-font-color:                     $color-1;
-
-// Headings
-$heading-font-family:                  $custom-font-family;
-$heading-font-weight:                  $font-bold;
-$heading-font-color:                   $gray-10;
+$button-font-color:                     $color-0;
 
 // Links
-$link-color:                           $color-6;
-$link-hover-color:                     $color-7;
+$link-color:                            $color-6;
 
 // Grid Widths
 $container-tablet: 768px;

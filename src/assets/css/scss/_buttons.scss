@@ -1,3 +1,8 @@
+
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
 .btn{
   display: inline-block;
   font-size: $button-font-size;
@@ -5,13 +10,11 @@
   line-height: 1.0rem;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
   user-select: none;
   cursor: pointer;
   border-radius: $radius;
   padding: $button-font-padding;
-  transition: all $transition-speed ease-out;
+  //transition: all $transition-speed ease-out;
   background: $button-bg-color;
   color: $button-font-color;
   border: $border solid $button-bg-color;
@@ -19,11 +22,10 @@
   &:hover,
   &:active,
   &.active,
-  &:focus,
-  &.focus {
-    background: $button-bg-color-hover;
+  &:focus{
+    background: darken($button-bg-color, 15%);
     color: $button-font-color;
-    border: $border solid $button-bg-color-hover;
+    border: $border solid darken($button-bg-color, 15%);
   }
   &.hollow{
     background: transparent;
@@ -32,32 +34,21 @@
     &:hover,
     &:active,
     &.active,
-    &:focus,
-    &.focus {
+    &:focus{
       background: $color-2;
-      color: $button-bg-color-hover;
-      border: $border solid $button-bg-color-hover;
+      color: darken($button-bg-color, 15%);
+      border: $border solid darken($button-bg-color, 15%);
     }
   }
-  &:disabled,
-  &.disabled{
+  &:disabled{
     opacity: .65;
     &:hover{
       cursor: not-allowed;
+      background: $button-bg-color;
     }
   }
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-// Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
   &.btn-block {
+    display: block;
     width: 100%;
   }
 }

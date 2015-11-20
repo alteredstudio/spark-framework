@@ -1,3 +1,8 @@
+
+// ==========================================================================
+// Overlays
+// ==========================================================================
+
 // Overlay Open
 body.overlay-open{
   height: 100%;
@@ -28,7 +33,6 @@ body.overlay-open{
     .inner{
       opacity: 1;
       visibility: visible;
-      top: 0px;
     }
   }
   .inner{
@@ -36,11 +40,8 @@ body.overlay-open{
     // Center with Flexbox
     text-align: center;
     flex: none;
-    transition: all $transition-speed-slow ease-out;
     opacity: 0;
     visibility: hidden;
-    position: relative;
-    top: -15px;
   }
   // Overlay Close
   .overlay-close{
@@ -65,7 +66,7 @@ body.overlay-open{
         position: absolute;
         height: 3px;
         width: 100%;
-        background: $gray-4;
+        background: $gray-0;
         border-radius: 0px;
         opacity: 1;
         left: 0;

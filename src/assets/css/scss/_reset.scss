@@ -1,3 +1,8 @@
+
+// ==========================================================================
+// Reset
+// ==========================================================================
+
 // Border Box
 *, *:before, *:after { box-sizing: border-box; }
 
@@ -21,3 +26,21 @@ audio:not([controls]) { display: none; height: 0; }
 // Images
 img { border: 0; }
 svg:not(:root) { overflow: hidden; }
+
+
+// Remove Touch and Focus Decoration
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  &:focus {
+    outline: 0;
+  }
+}
+
+body{
+  // No Horizontal Scrollbars
+  overflow-x: hidden;
+  // Flexbox Sticky Footer
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

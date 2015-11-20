@@ -1,39 +1,4 @@
-.breakpoint{
-  &:after{
-    content: " Tablet";
-  }
-}
 
-.block{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.container {
-  padding: 0 40px;
-}
-
-.choke-mobile{
-  width: 100%;
-}
-
-#menu-trigger, .overlay-close {
-  right: 17px !important;
-}
-
-// General Resets
-.no-float-tablet { float: none; }
-.no-padding-tablet { padding: 0; }
-.no-margin-tablet { margin: 0; }
-
-// Display Types
-.none-tablet { display: none; }
-.block-tablet { display: block; }
-.inline-block-tablet { display: inline-block; }
-.inline-tablet { display: inline; }
-
-// Text Alignments
-.text-left-tablet { text-align: left; }
-.text-right-tablet { text-align: right; }
-.text-center-tablet { text-align: center; }
-.text-justify-tablet { text-align: justify; }
+// ==========================================================================
+// Tablet Breakpoint
+// ==========================================================================

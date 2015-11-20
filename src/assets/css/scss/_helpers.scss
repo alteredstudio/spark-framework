@@ -1,131 +1,55 @@
+
 // ==========================================================================
-// Base – Helpers
+// Helpers
 // ==========================================================================
-
-*:focus {
-  outline: 0;
-}
-*{
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-body{
-  // No Horizontal Scrollbars
-  overflow-x: hidden;
-  // Flexbox Sticky Footer
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-// Adds a element to take up space for navbar
-header:after{
-  content: '';
-  display: block;
-  height: 72px;
-}
 
 .block{
   // Flexbox Sticky Footer
   flex: 1;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
   .inner{
     @extend .container;
   }
-}
-
-/* Verically center and set background to cover, set height to viewport in js. */
-.cover{
-  @extend .contrast;
-  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
-  background: $color-6;
-  background-size: cover;
-  position: relative;
-  // Center with Flexbox
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .inner{
-    text-align: center;
-    flex: none;
+  &.pad-1{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
-}
-.no-cover{
-  @extend .contrast;
-  background: $color-6;
-}
-
-.box-row{
-  min-height: 2rem;
-  background: $color-6;
-  border-radius: $radius;
-  overflow: hidden;
-  text-align: center;
-  color: $gray-0;
-  margin-bottom: 1.5rem;
-}
-
-.callout{
-  background: $callout-bg-color;
-}
-.muted{
-  color: $gray-4;
-}
-footer{
-  .inner{
-    @extend .container;
+  &.pad-2{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
   }
-  .footer{
-    .logo{
-      background: url('../img/logo.svg');
-      background-size: cover;
-      display: block;
-      width: 70px;
-      height: 50px;
-    }
-    .back-to-top{
-      font-size: 26px;
-    }
-    padding-top: 35px;
-    padding-bottom: 35px;
-    color: $gray-3;
+  &.pad-3{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  &.color-1{
+    background: $color-6;
+  }
+  &.color-2{
+    background: $color-7;
+  }
+  &.gray-0{
+    background: $gray-0;
+  }
+  &.gray-1{
+    background: $gray-2;
+  }
+  &.gray-2{
     background: $gray-7;
-    a, .link {
-      color: $gray-2;
-      border-bottom: 0 solid $gray-3;
-      padding-bottom: 0;
-      &:active,
-      &:hover {
-        color: $gray-0;
-      }
-    }
   }
-  .copyright{
-    padding-top: 28px;
-    padding-bottom: 28px;
-    color: $gray-4;
+  &.gray-3{
     background: $gray-8;
-    font-size: 15px;
-    a, .link {
-      color: $gray-3;
-      border-bottom: 0 solid $gray-4;
-      padding-bottom: 0;
-      &:active,
-      &:hover {
-        color: $gray-0;
-      }
-    }
+  }
+  // White out all elements inside a color\photo block
+  &.color-1, &.color-2, &.gray-2, &.gray-3{
+    @extend .contrast;
   }
 }
 
-.huge{
-  font-size: 3.8rem;
-  line-height: 3.5rem;
-  margin-top: 0.0rem;
-}
-.lead{
-  font-size: 24px;
-}
-
+// White out all elements inside a color\photo block
 .contrast{
   color: $gray-0;
   h1,h2,h3,h4,h5,h6,p{
@@ -138,7 +62,7 @@ footer{
   #menu-trigger .inner span, .overlay-close .inner span{
     background: $gray-0;
   }
-  input{
+  input:not([type=checkbox]):not([type=radio]), textarea, select{
     background: transparent;
     color: $gray-0;
     border: $border solid $gray-0;
@@ -151,9 +75,216 @@ footer{
       background: transparent;
       color: $gray-0;
       border: $border solid $gray-0;
+      &:hover,
+      &:active{
+        background: $gray-0;
+        color: $gray-9;
+        border: $border solid $gray-0;
+      }
     }
   }
 }
+
+
+// Placements
+.margin-0 {
+ margin:0px !important;
+}
+.margin-1 {
+ margin:5px !important;
+}
+.margin-2 {
+ margin:10px !important;
+}
+.margin-3 {
+ margin:100px !important;
+}
+
+.margin-left-0 {
+ margin-left:0px !important;
+}
+.margin-left-1 {
+ margin-left:5px !important;
+}
+.margin-left-2 {
+ margin-left:10px !important;
+}
+.margin-left-3 {
+ margin-left:100px !important;
+}
+
+.margin-right-0 {
+ margin-right:0px !important;
+}
+.margin-right-1 {
+ margin-right:5px !important;
+}
+.margin-right-2 {
+ margin-right:10px !important;
+}
+.margin-right-3 {
+ margin-right:100px !important;
+}
+
+.margin-left-right-0 {
+ margin-left:0px !important;
+ margin-right:0px !important;
+}
+.margin-left-right-1 {
+ margin-left:5px !important;
+ margin-right:5px !important;
+}
+.margin-left-right-2 {
+ margin-left:10px !important;
+ margin-right:10px !important;
+}
+.margin-left-right-3 {
+ margin-left:100px !important;
+ margin-right:100px !important;
+}
+
+.margin-top-0 {
+ margin-top:0px !important;
+}
+.margin-top-1 {
+ margin-top:5px !important;
+}
+.margin-top-2 {
+ margin-top:10px !important;
+}
+.margin-top-3 {
+ margin-top:100px !important;
+}
+
+.margin-bottom-0 {
+ margin-bottom:0px !important;
+}
+.margin-bottom-1 {
+ margin-bottom:5px !important;
+}
+.margin-bottom-2 {
+ margin-bottom:10px !important;
+}
+.margin-bottom-3 {
+ margin-bottom:100px !important;
+}
+
+.margin-both-0 {
+ margin-top:0px !important;
+ margin-bottom:0px !important;
+}
+.margin-both-1 {
+ margin-top:5px !important;
+ margin-bottom:5px !important;
+}
+.margin-both-2 {
+ margin-top:10px !important;
+ margin-bottom:10px !important;
+}
+.margin-both-3 {
+ margin-top:100px !important;
+ margin-bottom:100px !important;
+}
+
+.pad-0 {
+ padding:0px !important;
+}
+.pad-1 {
+ padding:5px !important;
+}
+.pad-2 {
+ padding:10px !important;
+}
+.pad-3 {
+ padding:100px !important;
+}
+
+.pad-left-0 {
+ padding-left:0px !important;
+}
+.pad-left-1 {
+ padding-left:5px !important;
+}
+.pad-left-2 {
+ padding-left:10px !important;
+}
+.pad-left-3 {
+ padding-left:100px !important;
+}
+
+.pad-right-0 {
+ padding-right:0px !important;
+}
+.pad-right-1 {
+ padding-right:5px !important;
+}
+.pad-right-2 {
+ padding-right:10px !important;
+}
+.pad-right-3 {
+ padding-right:100px !important;
+}
+
+.pad-left-right-0 {
+ padding-left:0px !important;
+ padding-right:0px !important;
+}
+.pad-left-right-1 {
+ padding-left:5px !important;
+ padding-right:5px !important;
+}
+.pad-left-right-2 {
+ padding-left:10px !important;
+ padding-right:10px !important;
+}
+.pad-left-right-3 {
+ padding-left:100px !important;
+ padding-right:100px !important;
+}
+
+.pad-top-0 {
+ padding-top:0px !important;
+}
+.pad-top-1 {
+ padding-top:5px !important;
+}
+.pad-top-2 {
+ padding-top:10px !important;
+}
+.pad-top-3 {
+ padding-top:100px !important;
+}
+
+.pad-bottom-0 {
+ padding-bottom:0px !important;
+}
+.pad-bottom-1 {
+ padding-bottom:5px !important;
+}
+.pad-bottom-2 {
+ padding-bottom:10px !important;
+}
+.pad-bottom-3 {
+ padding-bottom:100px !important;
+}
+
+.pad-both-0 {
+ padding-top:0px !important;
+ padding-bottom:0px !important;
+}
+.pad-both-1 {
+ padding-top:5px !important;
+ padding-bottom:5px !important;
+}
+.pad-both-2 {
+ padding-top:10px !important;
+ padding-bottom:10px !important;
+}
+.pad-both-3 {
+ padding-top:100px !important;
+ padding-bottom:100px !important;
+}
+
 
 // General Resets
 .no-margin { margin: 0; }
@@ -181,6 +312,13 @@ footer{
 .absolute { position: absolute; }
 .static { position: static; }
 .fixed { position: fixed; }
+
+// Center
+.center-element {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Text Alignments
 .text-left { text-align: left; }
@@ -211,8 +349,92 @@ footer{
   margin-left: 20px;
 }
 
-// Disable Element
-.disabled {
-  pointer-events: none;
-  opacity: .5;
+
+// Mobile Helpers
+.desktop-up{ display: none; }
+.tablet-down{ display: block; }
+
+.breakpoint{
+  &:after{
+    content: " Mobile";
+  }
+}
+
+.container {
+  padding: 0 28px;
+}
+
+.choke{
+  max-width: 600px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choke-mobile{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Tablet Helpers
+@media only screen and (min-width: $container-tablet) {
+
+  .breakpoint{
+    &:after{
+      content: " Tablet";
+    }
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  .choke-mobile{
+    width: 100%;
+  }
+
+  #menu-trigger, .overlay-close {
+    right: 17px !important;
+  }
+
+}
+
+// Desktop Helpers
+@media only screen and (min-width: $container-desktop) {
+
+  .desktop-up{ display: block; }
+  .tablet-down{ display: none; }
+
+  .breakpoint{
+    &:after{
+      content: " Desktop";
+    }
+  }
+
+  .block{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &.pad-3{
+      padding-top: 80px !important;
+      padding-bottom: 80px !important;
+    }
+  }
+
+  .container {
+    padding: 0 60px;
+  }
+
+}
+
+// TV Helpers
+@media only screen and (min-width: $container-tv) {
+
+  .breakpoint{
+    &:after{
+      content: " TV";
+    }
+  }
+
 }

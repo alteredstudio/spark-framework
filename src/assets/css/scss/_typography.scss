@@ -1,3 +1,8 @@
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
 // Body
 html, body{
   background: $body-background-color;
@@ -44,6 +49,20 @@ h6, .h6{
   line-height: 2.0rem;
 }
 
+.huge{
+  font-size: 3.8rem;
+  line-height: 3.5rem;
+  margin-top: 0.0rem;
+}
+
+.lead{
+  font-size: 24px;
+}
+
+.muted{
+  color: $gray-4;
+}
+
 // Paragraph
 p { margin: 0 0 0.9rem 0; }
 
@@ -59,6 +78,7 @@ a, .link {
   &.unstyled{
     text-decoration: none;
     border: none;
+    padding-bottom: 0;
     &:active,
     &:hover {
       text-decoration: none;
@@ -67,37 +87,11 @@ a, .link {
   }
   &:active,
   &:hover {
-    color: $link-hover-color;
+    color: darken($link-color, 15%);
     outline: 0;
     text-decoration: none;
   }
 }
-
-// Strong
-strong, .strong {
-  font-weight: $font-bold;
-}
-
-// Italic
-em, .em {
-  font-style: italic;
-}
-
-// Small
-small, .small { font-size: 80%; }
-
-// Sub and Sup
-sub, .sub, sup, .sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup, .sup { top: -0.5em; }
-sub, .sub { bottom: -0.25em; }
-
-// Del
-del, .del { text-decoration: line-through; }
 
 // Horizontal Rules
 hr, .hr {
@@ -152,7 +146,7 @@ dl {
 // Code
 code, kbd, pre, samp {
   word-wrap: break-word;
-  font-family: $code-font-family;
+  font-family: 'courier new', monospace, serif;
   background-color: $gray-1;
   font-weight: normal;
   padding: 8px 12px;

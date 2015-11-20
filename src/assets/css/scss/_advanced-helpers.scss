@@ -1,0 +1,186 @@
+
+// ==========================================================================
+// Advanced Helpers
+// ==========================================================================
+
+.box-row{
+  min-height: 2rem;
+  background: $color-6;
+  border-radius: $radius;
+  overflow: hidden;
+  text-align: center;
+  color: $gray-0;
+  margin-bottom: 1.5rem;
+}
+
+// Disable Element
+.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+// Hide only visually, but have it available for screenreaders: : h5bp.com/v
+.sr {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9 {
+  padding-bottom: 42.857143%;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
+// Strong
+strong, .strong {
+  font-weight: $font-bold;
+}
+
+// Italic
+em, .em {
+  font-style: italic;
+}
+
+// Small
+small, .small { font-size: 80%; }
+
+// Sub and Sup
+sub, .sub, sup, .sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup, .sup { top: -0.5em; }
+sub, .sub { bottom: -0.25em; }
+
+// Del
+del, .del { text-decoration: line-through; }
+
+
+// General Resets
+.no-float-mobile { float: none; }
+.no-padding-mobile { padding: 0; }
+.no-margin-mobile { margin: 0; }
+
+// Display Types
+.display-none-mobile { display: none; }
+.display-block-mobile { display: block; }
+.display-inline-block-mobile { display: inline-block; }
+.display-inline-mobile { display: inline; }
+
+// Text Alignments
+.text-left-mobile { text-align: left; }
+.text-right-mobile { text-align: right; }
+.text-center-mobile { text-align: center; }
+.text-justify-mobile { text-align: justify; }
+
+
+// Tablet Helpers
+@media only screen and (min-width: $container-tablet) {
+
+  // General Resets
+  .no-float-tablet { float: none; }
+  .no-padding-tablet { padding: 0; }
+  .no-margin-tablet { margin: 0; }
+
+  // Display Types
+  .none-tablet { display: none; }
+  .block-tablet { display: block; }
+  .inline-block-tablet { display: inline-block; }
+  .inline-tablet { display: inline; }
+
+  // Text Alignments
+  .text-left-tablet { text-align: left; }
+  .text-right-tablet { text-align: right; }
+  .text-center-tablet { text-align: center; }
+  .text-justify-tablet { text-align: justify; }
+
+}
+
+// Desktop Helpers
+@media only screen and (min-width: $container-desktop) {
+
+  // General Resets
+  .no-float-desktop { float: none; }
+  .no-padding-desktop { padding: 0; }
+  .no-margin-desktop { margin: 0; }
+
+  // Display Types
+  .display-none-desktop { display: none; }
+  .display-block-desktop { display: block; }
+  .display-inline-block-desktop { display: inline-block; }
+  .display-inline-desktop { display: inline; }
+
+  // Text Alignments
+  .text-left-desktop { text-align: left; }
+  .text-right-desktop { text-align: right; }
+  .text-center-desktop { text-align: center; }
+  .text-justify-desktop { text-align: justify; }
+
+}
+
+// TV Helpers
+@media only screen and (min-width: $container-tv) {
+
+  // General Resets
+  .no-float-tv { float: none; }
+  .no-padding-tv { padding: 0; }
+  .no-margin-tv { margin: 0; }
+
+  // Display Types
+  .display-none-tv { display: none; }
+  .display-block-tv { display: block; }
+  .display-inline-block-tv { display: inline-block; }
+  .display-inline-tv { display: inline; }
+
+  // Text Alignments
+  .text-left-tv { text-align: left; }
+  .text-right-tv { text-align: right; }
+  .text-center-tv { text-align: center; }
+  .text-justify-tv { text-align: justify; }
+
+}

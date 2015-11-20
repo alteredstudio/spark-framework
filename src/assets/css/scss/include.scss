@@ -1,37 +1,56 @@
-// Import scss files
-@import 'reset.scss';
-@import '_customize.scss';
-@import '_grid.scss';
-@import '_typography.scss';
-@import '_forms.scss';
-@import '_buttons';
-@import '_accordion.scss';
-@import '_overlays.scss';
-@import '_menus.scss';
-@import '_placement.scss';
-//@import '_extras.scss';
-//@import '_colors.scss';
-@import '_helpers.scss';
 
-// Mobile Breakpoint Min 0em
+// ------------------------------------------------------------------
+//  Core Styles of Min
+// ------------------------------------------------------------------
+
+@import '__customize.scss',
+        '_reset.scss',
+        '_grid.scss',
+        '_typography.scss',
+        '_forms.scss',
+        '_buttons.scss',
+        '_helpers.scss';
+
+
+// ------------------------------------------------------------------
+//  Customize Optional Components
+//
+//  Comment out unwanted modules to exclude them from final CSS output
+// ------------------------------------------------------------------
+
+
+@import                                'menus';
+@import                                'overlays';
+@import                                'accordion';
+@import                                'advanced-forms';
+
+/*
+@import                                'messages';
+@import                                'advanced-helpers';
+
+@media print {
+  @import                              '_print';
+}
+ */
+
+// ------------------------------------------------------------------
+//  Breakpoints
+// ------------------------------------------------------------------
+
+// Mobile Breakpoint
 @import '_breakpoint-mobile';
 
-// Tablet Breakpoint Min 50em
+// Tablet Breakpoint
 @media only screen and (min-width: $container-tablet) {
   @import '_breakpoint-tablet';
 }
 
-// Desktop Breakpoint Min 72em
+// Desktop Breakpoint
 @media only screen and (min-width: $container-desktop) {
   @import '_breakpoint-desktop';
 }
 
-// TV Breakpoint Min 100em
+// TV Breakpoint
 @media only screen and (min-width: $container-tv) {
   @import '_breakpoint-tv';
-}
-
-// Print Styles
-@media print {
-  @import "_print";
 }

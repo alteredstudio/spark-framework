@@ -1,3 +1,35 @@
+
+// ==========================================================================
+// Menus
+// ==========================================================================
+
+/* Verically center and set background to cover, set height to viewport in js. */
+.cover{
+  @extend .contrast;
+  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
+  background: $color-6;
+  background-size: cover;
+  position: relative;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner{
+    text-align: center;
+    flex: none;
+  }
+}
+.no-cover{
+  @extend .contrast;
+  background: $color-6;
+}
+// Adds a element to take up space for navbar
+header:after{
+  content: '';
+  display: block;
+  height: 72px;
+}
+
 // Menu Horizontal Open
 body.fixed-menu-horizontal{
   //margin-top: 72px;
@@ -87,19 +119,21 @@ body.overlayMenu-open{
     // Center with Flexbox
     text-align: center;
     flex: none;
+    width: 100%;
   }
   ul{
     li{
       a{
-        color: $color-3;
-        padding: 0.70rem 0;
+        color: $color-2;
+        padding: 0.75rem 0;
         display: block;
         font-size: 29px;
         border: 0;
+        text-align: center;
         // Menu Items Effect
-        transition: all $transition-speed-slow ease-out;
+        transition: all $transition-speed-slow .15s ease-out;
         position: relative;
-        left: -20px;
+        left: -30px;
         opacity: 0;
         visibility: hidden;
         // Menu Items Effect Open
@@ -147,7 +181,7 @@ body.overlayMenu-open #menu-trigger{
   height: 75px;
   padding: 23px;
   transform: rotate(0deg);
-  transition: .3s ease-out;
+  transition: .3s .1s ease-out;
   cursor: pointer;
   z-index: 105;
   .inner{

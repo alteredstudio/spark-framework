@@ -1,24 +1,21 @@
-// Forms, Inputs, Labels
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
 form, fieldset {
   padding: 0px;
   border: 0;
 }
-input, textarea, select {
-  border-radius: $radius;
-}
-// Fix Safari Rounds inputs :(
-input[type=search] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
-}
-// Fix Safari Field height bug
-input[type=text],input[type=search],input[type=date],input[type=password],input[type=email],input[type=phone], select{
+// Fix Safari Height
+input:not([type=checkbox]):not([type=radio]), select{
   height: 2.8rem;
 }
-input[type=text],input[type=search],input[type=date],input[type=password],input[type=email],input[type=phone],textarea{
+input:not([type=checkbox]):not([type=radio]), textarea{
   -webkit-appearance: none;
 }
-input, textarea, select{
+input:not([type=checkbox]):not([type=radio]), textarea, select{
+  border-radius: $radius;
   box-shadow: none !important;
   background: $gray-0;
   font-size: 1rem;
@@ -28,40 +25,17 @@ input, textarea, select{
   border: 0;
 	border: $border solid $gray-4;
   transition: border-color $transition-speed ease-out;
-  &:hover{
-  }
 	&:focus{
 		border: 2px solid $gray-10;
     padding: 9px 13px;
 	}
 }
-.select{
+input[type='checkbox'], input[type='radio']{
+  display: inline-block;
+  float: left;
   position: relative;
-  &:before,
-  &:after{
-    content: "";
-    position: absolute;
-    right: 17px;
-    width: 0;
-  	height: 0;
-  	border-left: 4px solid transparent;
-  	border-right: 4px solid transparent;
-  }
-  &:before{
-    top: 14px;
-    border-bottom: 9px solid $gray-10;
-  }
-  &:after{
-    bottom: 14px;
-    border-top: 9px solid $gray-10;
-  }
-  select{
-    -webkit-appearance: none;
-    &:hover,
-    &:focus{
-      text-indent: 5px;
-    }
-  }
+  top: 10px;
+  margin-right: 8px;
 }
 select {
   text-indent: 5px;
@@ -80,109 +54,4 @@ label {
     padding: 0px 0px 10px 0px;
     margin: -10px 0px 0px 0px;
 	}
-}
-::-webkit-input-placeholder {
-   color: $gray-4;
-}
-
-// Grouped Fields
-.field-group {
-  margin-bottom:15px;
-  input{
-    border-radius: 0;
-    margin: 0;
-    &:not(:last-of-type):not(:focus) {
-      border-bottom: 0;
-    }
-    &:first-of-type {
-      border-radius: $radius $radius 0 0;
-    }
-    &:last-of-type {
-      border-radius: 0 0 $radius $radius;
-      margin: 0 0 10px;
-    }
-  }
-}
-
-// Custom Checkbox
-[type="checkbox"] {
-  &:not(:checked) + label:before, &:checked + label:before, &:not(:checked) + label:after, &:checked + label:after {
-    transition: all .3s ease-out;
-    font-family: "Ionicons";
-    font-size: 28px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 0px;
-  }
-  &:not(:checked), &:checked {
-    position: absolute;
-    left: -9999px;
-  }
-  &:not(:checked) + label, &:checked + label {
-    position: relative;
-    padding-left: 32px;
-    cursor: pointer;
-  }
-  &:not(:checked) + label:before, &:checked + label:before {
-    content: '\f372';
-    left: 1px;
-  }
-  &:not(:checked) + label:after, &:checked + label:after {
-    content: '\f373';
-    left: 1px;
-    color: $color-6;
-  }
-  &:not(:checked) + label:before, &:checked + label:after{
-    opacity: 1;
-  }
-  &:not(:checked) + label:after, &:checked + label:before {
-    opacity: 0;
-  }
-  &:disabled {
-    &:checked + label:after, + label {
-      color: $gray-4;
-    }
-  }
-}
-
-// Custom Radio
-[type="radio"] {
-  & + label:before, & + label:after{
-    transition: all .3s ease-out;
-    font-family: "Ionicons";
-    font-size: 28px;
-    position: absolute;
-    top: 0px;
-    left: 1px;
-    width: 30px;
-    height: 30px;
-  }
-  &:not(:checked), &:checked {
-    position: absolute;
-    left: -9999px;
-  }
-  &:not(:checked) + label, &:checked + label {
-    position: relative;
-    padding-left: 32px;
-    cursor: pointer;
-  }
-  &:not(:checked) + label:before, &:checked + label:before {
-    content: '\f3a6';
-  }
-  &:not(:checked) + label:after, &:checked + label:after {
-    content: '\f3a7';
-    color: $color-6;
-  }
-  &:not(:checked) + label:after {
-    opacity: 0;
-  }
-  &:checked + label:after {
-    opacity: 1;
-  }
-  &:disabled {
-    &:checked + label:after, + label {
-      color: $gray-4;
-    }
-  }
 }
