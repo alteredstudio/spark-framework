@@ -3,6 +3,17 @@
 // Helpers
 // ==========================================================================
 
+// Visual aid for seeing column layout
+.box-row{
+  min-height: 2rem;
+  background: $color-6;
+  border-radius: $radius;
+  overflow: hidden;
+  text-align: center;
+  color: $gray-0;
+  margin-bottom: 1.5rem;
+}
+
 .block{
   // Flexbox Sticky Footer
   flex: 1;
@@ -35,7 +46,7 @@
     background: $gray-0;
   }
   &.gray-1{
-    background: $gray-2;
+    background: $gray-1;
   }
   &.gray-2{
     background: $gray-7;
