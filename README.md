@@ -11,7 +11,7 @@ CSS file size compressed is 18k.
 
 ## Why use Spark?
 
-* Fully Responsive with breakpoint files for: Watch, Mobile, Tablet, Desktop, and TVs.
+* Fully Responsive with breakpoint files for: Mobile, Tablet, Desktop, and TVs.
 * Uses Flexbox grid for vertical centering, and nesting grids.
 * HTML5 page template, so you can get up and running fast.
 * Uses Gulp.js for an efficient workflow.

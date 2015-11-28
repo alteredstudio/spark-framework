@@ -50,9 +50,17 @@ h6, .h6{
 }
 
 .huge{
-  font-size: 3.8rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   margin-top: 0.0rem;
+}
+
+// Tablet Helpers
+@media only screen and (min-width: $container-tablet) {
+  .huge{
+    font-size: 3.8rem;
+    line-height: 3.7rem;
+  }
 }
 
 .lead{
